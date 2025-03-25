@@ -1,6 +1,6 @@
 body {
     background-image: url(../assets/background.jpg);
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
@@ -36,16 +36,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 80px;
 }
 
 .main-wrapper {
     color: white;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
 }
 
 .main-container {
@@ -56,7 +57,7 @@ main {
 }
 
 .login-form-container {
-    padding: 40px 70px;
+    padding: 20px 40px;
 }
 
 .login-form {
@@ -66,21 +67,13 @@ main {
 
 .email-input,
 .password-input {
-    font-size: 20px;
+    font-size: 16px;
     color: white;
-    background: transparent;
-    padding: 24px 16px 8px 16px;
-    opacity: 1;
-    width: 290px;
-    line-height: 20px;
-
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid red;
     border-radius: 6px;
-}
-
-.email-input:focus,
-.password-input:focus {
-    opacity: 1;
+    padding: 12px;
+    width: 290px;
 }
 
 .password-input {
@@ -91,22 +84,141 @@ main {
     margin-top: 15px;
 }
 
+.checkbox {
+    border: none;
+    width: 15px;
+    cursor: pointer;
+}
+
 .login-button {
     margin-top: 15px;
-    padding: 24px 16px 8px 16px;
-    background-color: red;
+    padding: 12px;
+    background-color: rgb(224, 31, 31);
     color: white;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: rgb(193, 30, 30);
+}
+
+.login-button:active {
+    background-color: rgb(169, 42, 42);
+}
+
+.other-login-methods {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.oauth-login {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.google-login-button,
+.facebook-login-button {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.login-code {
+    margin-top: 5px;
+    padding: 12px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.google-login-button:hover,
+.facebook-login-button:hover,
+.login-code:hover {
+    opacity: 0.9;
+}
+
+.google-login-button:active,
+.facebook-login-button:active,
+.login-code:active {
+    background-color: black;
+    color: white;
+}
+
+.google-icon,
+.facebook-icon {
+    font-size: 23px;
+    margin-right: 5px;
 }
 
 .other-options {
     display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.other-options span {
+    color: gray;
+}
+
+.other-options a {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration 0.3s;
+}
+
+.other-options a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.forgot-password:hover {
+    opacity: 0.8;
 }
 
 footer {
-    padding-top: 80px;
-    padding-left: 30px;
+    padding: 20px;
     background-color: rgb(49, 46, 46);
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
 }
