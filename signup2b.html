@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/shared.css">
-  <link rel="stylesheet" href="styles/signup/signup2b.css">
+  <link rel="stylesheet" href="styles/signup/signup1b.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Signup</title>
 </head>
@@ -16,7 +16,7 @@
           <span class="brand-name">MOVIX</span>
         </a>
         <div class="login-container">
-          <a href="index.html">Đăng xuất</a>
+          <a href="index.html">Đăng nhập</a>
         </div>
     </div>
   </header>
@@ -25,27 +25,24 @@
     <div class="main-wrapper">
       <div class="main-container">
         <div class="content">
-          <div class="step-logo-container">
-            <i class="fa-regular fa-circle-check"></i>
-          </div>
-          <span class="step-count">BƯỚC <span class="count">2/3</span></span>
-          <h1>Chọn gói dịch vụ của bạn.</h1>
+          <span class="step-count">BƯỚC <span class="count">1/3</span></span>
+          <h1>Tạo mật khẩu để bắt đầu tư cách thành viên của bạn</h1>
           <div>
-            <div class="yapping">
-              <i class="fa-solid fa-check"></i>
-              <span>Không yêu cầu cam kết, hủy bất kỳ lúc nào.</span>
-            </div>
-            <div class="yapping">
-              <i class="fa-solid fa-check"></i>
-              <span>Mọi thứ trên Movix chỉ với mức giá thấp.</span>
-            </div>
-            <div class="yapping">
-              <i class="fa-solid fa-check"></i>
-              <span>Không quảng cáo, không phụ phí. Luôn luôn như vậy.</span>
-            </div>
+            <span class="yapping yapping-1">Chỉ cần vài bước nữa là bạn sẽ hoàn tất!</span>
+            <span class="yapping">Chúng tôi cũng chẳng thích thú gì với các loại giấy tờ.</span>
           </div>
+          <form>
+            <input class="email-input" type="email" placeholder="Email" required>
+            <input class="password-input" type="password" placeholder="Mật khẩu" required>
+            <div class="checkbox-container">
+              <input class="checkbox" type="checkbox">
+              <label for="checkbox" class="checkbox-description">
+                Vui lòng không gửi các ưu đãi đặc biệt của Movix qua email của tôi
+              </label>
+            </div>
+          </form>
         </div>
-        <button class="next-button" onclick="location.href=`signup2b.html`">Tiếp theo</button>
+        <button class="next-button" onclick="location.href='signup2a.html'">Tiếp theo</button>
       </div>
     </div>
   </main>

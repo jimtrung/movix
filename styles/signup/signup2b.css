@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 15px 20px 15px 40px;
     border-bottom: 1px solid rgb(211, 204, 204);
 }
 
@@ -49,11 +49,9 @@ body {
 }
 
 main {
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
 }
 
 .main-wrapper {
@@ -63,37 +61,29 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    max-width: 340px;
-    width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 85px;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 440px;
+    padding: 0 15px 0px 15x;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
-}
-
-.step-logo-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.step-logo-container i {
-    font-size: 45px;
-    color: rgb(184, 20, 20);
+    text-align: left;
 }
 
 .step-count {
+    margin-top: 10px;
     font-size: 13px;
     color: rgb(69, 64, 64);
 }
@@ -106,22 +96,45 @@ h1 {
     font-size: 32px;
     margin: 0;
     color: rgb(58, 55, 55);
-}   
-
-.yapping {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    font-size: 18px;
-    max-width: 290px;
-    width: 100%;
-    text-align: left;
-    line-height: 24px;
-    margin-top: 15px;
 }
 
-.yapping i {
-    font-size: 25px;
-    color: red;
+.yapping {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.yapping-1 {
+    margin-bottom: 3px;
+    display: block;
+}
+
+.email-input,
+.password-input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 56px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: first baseline;
+}
+
+.checkbox {
+    transform: scale(1.5);
+}
+
+.checkbox-description {
+    font-size: 16px;
+    margin-left: 8px;
+    line-height: 24px;
 }
 
 .next-button {
@@ -130,12 +143,11 @@ h1 {
     color: white;
     font-size: 24px;
     font-weight: 500;
-    max-width: 330px;
     width: 100%;
     border: none;
     cursor: pointer;    
     border-radius: 4px;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: background-color 0.3s;
 }
 

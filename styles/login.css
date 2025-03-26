@@ -1,9 +1,16 @@
 body {
-    background-image: url(../assets/background.jpg);
     background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    transition: background-image 5s;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black;
+        background-image: none;
+    }
 }
 
 .header-container {
