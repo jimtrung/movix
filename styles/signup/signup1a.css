@@ -8,7 +8,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 15px 30px 15px 40px;
+    border-bottom: 1px solid rgb(211, 204, 204);
 }
 
 .brand-container {
@@ -62,7 +63,8 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     text-align: center;
 }
 
@@ -94,12 +96,25 @@ main {
 
 .step-count {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 13px;
+    color: rgb(69, 64, 64);
+}
+
+.count {
+    color: black;
 }
 
 h1 {
-    font-size: 22px;
-    margin: 10px 0;
+    font-size: 32px;
+    margin: 0;
+    color: rgb(58, 55, 55);
+}
+
+.yapping {
+    font-size: 18px;
+    max-width: 290px;
+    width: 100%;
+    text-align: center;
 }
 
 .next-button {
@@ -108,12 +123,20 @@ h1 {
     color: white;
     font-size: 24px;
     font-weight: 500;
-    width: 330px;
+    width: 100%;
     border: none;
-    cursor: pointer;
+    cursor: pointer;    
     border-radius: 4px;
     margin-top: 20px;
     transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: rgb(199, 13, 13);
+}
+
+.next-button:active {
+    background-color: rgb(162, 7, 7);
 }
 
 footer {

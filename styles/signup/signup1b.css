@@ -1,0 +1,195 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px 15px 40px;
+    border-bottom: 1px solid rgb(211, 204, 204);
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.brand-logo {
+    font-size: 70px;
+    color: red;
+}
+
+.brand-name {
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 35px;
+    color: red;
+}
+
+.login-container {
+    margin-right: 20px;
+}
+
+.login-container a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(34, 33, 33);
+    transition: text-decoration 0.3s;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 85px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 440px;
+    padding: 0 15px 0px 15x;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.step-count {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgb(69, 64, 64);
+}
+
+.count {
+    color: black;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    color: rgb(58, 55, 55);
+}
+
+.yapping {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.yapping-1 {
+    margin-bottom: 3px;
+    display: block;
+}
+
+.email-input,
+.password-input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 56px;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+.checkbox-container {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: first baseline;
+}
+
+.checkbox {
+    transform: scale(1.5);
+}
+
+.checkbox-description {
+    font-size: 16px;
+    margin-left: 8px;
+    line-height: 24px;
+}
+
+.next-button {
+    padding: 24px 12px;
+    background-color: rgb(224, 31, 31);
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    cursor: pointer;    
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: rgb(199, 13, 13);
+}
+
+.next-button:active {
+    background-color: rgb(162, 7, 7);
+}
+
+footer {
+    padding: 30px 40px;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+select {
+    margin-top: 15px;
+    padding: 5px;
+}
