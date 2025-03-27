@@ -100,12 +100,79 @@ h1 {
 .pricing-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 1%;
 }
 
-.pricing-container div {
-    background-color: aqua;
-    height: 300px;
+.pack-container {
+    border: 1px solid gray;
+    border-radius: 18px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.pack-header {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 18px;
+    padding: 10px 16px 15px 16px;
+    margin-bottom: 25px;
+}
+
+.mobile {
+    background: url(../../assets/pack-images/mobile.jfif) no-repeat center 20%;
+}
+
+.basic {
+    background: url(../../assets/pack-images/basic.jfif) no-repeat center 20%;
+}
+
+.standard {
+    background: url(../../assets/pack-images/standard.avif) no-repeat left;
+}
+
+.luxury {
+    background: url(../../assets/pack-images/luxury.jfif) no-repeat left;
+}
+
+.picked-icon-container {
+    display: flex;
+    justify-content: right;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.pack-description {
+    padding: 0px 15px 20px 15px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    font-size: 13px;
+    color: rgb(118, 118, 118);
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.col-detail {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.next-button-container {
+    display: flex;
+    justify-content: center;
 }
 
 .next-button {
@@ -114,9 +181,9 @@ h1 {
     color: white;
     font-size: 24px;
     font-weight: 500;
-    width: 100%;
+    width: 44%;
     border: none;
-    cursor: pointer;    
+    cursor: pointer;
     border-radius: 4px;
     margin-top: 20px;
     transition: background-color 0.3s;
@@ -163,4 +230,4 @@ footer li {
 select {
     margin-top: 15px;
     padding: 5px;
-}   
+}
