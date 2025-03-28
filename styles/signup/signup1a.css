@@ -82,6 +82,18 @@ main {
     gap: 15px;
 }
 
+.step-preview-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.s-count {
+    padding: 8px 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
 .step-logo-container {
     display: flex;
     justify-content: center;
@@ -92,6 +104,7 @@ main {
 .step-logo-container i {
     font-size: 70px;
     color: rgb(184, 20, 20);
+    cursor: pointer;
 }
 
 .step-count {
@@ -115,6 +128,7 @@ h1 {
     max-width: 290px;
     width: 100%;
     text-align: center;
+    line-height: 24px;
 }
 
 .next-button {

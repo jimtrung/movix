@@ -6,17 +6,12 @@ body {
     animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        background-color: black;
-        background-image: none;
-    }
-}
 
 @keyframes bg {
     from {
         background-image: url(../assets/background1.jpg);
     }
+
     to {
         background-image: url(../assets/background2.jpg);
     }
@@ -25,7 +20,7 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 1%;
 }
 
 .brand-container {
@@ -56,12 +51,14 @@ main {
 
 .main-wrapper {
     color: white;
-    padding: 40px;
+    padding: 5% 1%;  
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 8px;
+    max-width: 450px;
+    width: 100%;
 }
 
 .main-container {
@@ -69,10 +66,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 322px;
+    width: 100%;
+    margin: 20px;
 }
 
-.login-form-container {
-    padding: 20px 40px;
+.login-form-container { 
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;  
+    max-width: 322px;
+    width: 100%;
 }
 
 h1 {
@@ -82,17 +86,21 @@ h1 {
 .login-form {
     display: flex;
     flex-direction: column;
+    max-width: 322px;
+    width: 100%;
 }
 
 .email-input,
 .password-input {
+    display: flex;
     font-size: 16px;
     color: white;
     background: rgba(255, 255, 255, 0.2);
     border: 1px solid red;
     border-radius: 6px;
     padding: 12px;
-    width: 290px;
+    max-width: 298px;
+    width: 100%;
 }
 
 .password-input,
@@ -115,6 +123,8 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    max-width: 322px;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
@@ -226,8 +236,8 @@ footer {
 }
 
 footer a {
-    color: white;
-    text-decoration: none;
+    color: white;    
+    text-decoration: none;  
 }
 
 footer ul {
@@ -237,4 +247,29 @@ footer ul {
 
 footer li {
     margin: 5px 0;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black;
+        background-image: none;
+    }
+
+    .brand-container {
+        padding: 10px 0px 0px 10px;
+        gap: 0%; 
+    }
+
+    .brand-logo {
+        font-size: 35px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+    
+    .email-input,
+    .password-input {
+        width: 90%;
+    }
 }
