@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 20px 15px 40px;
+    padding: 2% 1%;
     border-bottom: 1px solid rgb(211, 204, 204);
 }
 
@@ -11,7 +11,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .brand-logo {
@@ -21,13 +21,13 @@
 
 .brand-name {
     font-weight: 700;
-    padding-left: 10px;
+    padding-left: 4%;
     font-size: 35px;
     color: red;
 }
 
-.signu-container {
-    margin-right: 20px;
+.login-container {
+    margin-right: 2%; 
 }
 
 .login-container a {
@@ -40,21 +40,27 @@
 
 .login-container a:hover {
     text-decoration: underline;
+    /* Drop down menu ? */
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 20%;
+    margin-top: 2%;  
 }
 
 .main-wrapper {
-    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
-    margin-bottom: 85px;
+    text-align: center;
+
+    padding: 15%;  
+    max-width: 440px;
+    width: 100%;
 }
 
 .main-container {
@@ -62,9 +68,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+
     max-width: 440px;
-    padding: 0 15px 0px 15x;
+    width: 100%;
 }
 
 .content {
@@ -75,13 +81,13 @@ main {
 }
 
 .step-count {
-    margin-top: 10px;
     font-size: 13px;
     color: rgb(69, 64, 64);
 }
 
 .count {
     color: black;
+    font-weight: 500;
 }
 
 h1 {
@@ -105,12 +111,12 @@ h1 {
 .email-input,
 .password-input {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     width: 100%;
     box-sizing: border-box;
     height: 56px;
     font-size: 16px;
-    padding-left: 15px;
+    padding-left: 4%;
 }
 
 .checkbox-container {
@@ -184,4 +190,18 @@ footer li {
 select {
     margin-top: 15px;
     padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .brand-container i {
+        font-size: 35px;
+    }
+
+    .brand-container span {
+        font-size: 20px;
+    }
+    
+    .login-container a { 
+        font-size: 16px;
+    }
 }

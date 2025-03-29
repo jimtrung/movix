@@ -2,10 +2,9 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
     /* animation-name: bg; */
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-
 
 @keyframes bg {
     from {
@@ -32,11 +31,11 @@ body {
     color: rgb(147, 12, 68);
 }
 
-.brand-logo {
+.brand-container i {
     font-size: 70px;
 }
 
-.brand-name {
+.brand-container span {
     font-weight: 700;
     padding-left: 10px;
     font-size: 35px;
@@ -45,7 +44,7 @@ body {
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     padding-bottom: 180px;
 }
 
@@ -147,7 +146,7 @@ h1 {
     background-color: rgb(221, 221, 221);
     color: black;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -244,7 +243,6 @@ h1 {
     margin-left: 5px;
     color: white;
     text-decoration: none;
-    cursor: pointer;
     transition: text-decoration 0.3s;
 }
 
@@ -254,7 +252,6 @@ h1 {
 
 .forgot-password {
     margin-top: 8px; 
-    text-decoration: underline;
     cursor: pointer;
     color: white;
     transition: opacity 0.3s, color 0.3s, box-shadow 0.3s;
@@ -264,27 +261,6 @@ h1 {
     opacity: 0.8;
     color: aqua;
     text-shadow: 0px 4px 10px rgba(12, 151, 206, 0.7);  
-}
-
-footer {   
-    padding: 20px;
-    background-color: rgb(53, 51, 51); 
-    color: white;
-    text-align: center;
-}
-
-footer a {
-    color: white;    
-    text-decoration: none;  
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer li {
-    margin: 5px 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -298,11 +274,11 @@ footer li {
         gap: 0%; 
     }
 
-    .brand-logo {
+    .brand-container i {
         font-size: 35px;
     }
 
-    .brand-name {
+    .brand-container span {
         font-size: 20px;
     }
     

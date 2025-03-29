@@ -95,3 +95,38 @@ body {
     font-weight: 900;
     font-style: italic;
 }
+
+footer {
+    padding: 30px 40px;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+select {
+    margin-top: 15px;
+    padding: 5px;
+}

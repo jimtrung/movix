@@ -1,14 +1,8 @@
-body {
-    background-color: white;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 2% 1%;
     border-bottom: 1px solid rgb(211, 204, 204);
 }
 
@@ -17,7 +11,7 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .brand-logo {
@@ -27,13 +21,13 @@ body {
 
 .brand-name {
     font-weight: 700;
-    padding-left: 10px;
+    padding-left: 4%;
     font-size: 35px;
     color: red;
 }
 
 .login-container {
-    margin-right: 20px;
+    margin-right: 2%; 
 }
 
 .login-container a {
@@ -46,26 +40,28 @@ body {
 
 .login-container a:hover {
     text-decoration: underline;
+    /* Drop down menu ? */
 }
 
 main {
-    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+
+    padding-bottom: 20%;
+    margin-top: 2%;  
 }
 
 .main-wrapper {
-    color: black;
-    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
     border-radius: 8px;
     max-width: 340px;
     width: 100%;
-    text-align: center;
+    padding: 15%;
 }
 
 .main-container {
@@ -100,6 +96,7 @@ main {
 
 .count {
     color: black;
+    font-weight: 500;
 }
 
 h1 {
@@ -147,37 +144,16 @@ h1 {
     background-color: rgb(162, 7, 7);
 }
 
-footer {
-    padding: 30px 40px;
-    background-color: rgb(49, 46, 46);
-    color: white;
-    text-align: center;
-}
+@media screen and (max-width: 500px) {
+    .brand-container i {
+        font-size: 35px;
+    }
 
-footer span {
-    display: block;
-    margin-bottom: 15px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer li {
-    margin: 5px 0;
-}
-
-select {
-    margin-top: 15px;
-    padding: 5px;
+    .brand-container span {
+        font-size: 20px;
+    }
+    
+    .login-container a { 
+        font-size: 16px;
+    }
 }
