@@ -26,11 +26,11 @@
     color: red;
 }
 
-.login-container {
+.logout-container {
     margin-right: 2%; 
 }
 
-.login-container a {
+.logout-container a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -38,7 +38,7 @@
     transition: text-decoration 0.3s;
 }
 
-.login-container a:hover {
+.logout-container a:hover {
     text-decoration: underline;
     /* Drop down menu ? */
 }
@@ -61,7 +61,7 @@ main {
     border-radius: 8px;
     max-width: 340px;
     width: 100%;
-    padding: 15%;
+    padding: 8%;
 }
 
 .main-container {

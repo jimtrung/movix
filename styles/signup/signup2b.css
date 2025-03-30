@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 20px 15px 40px;
+    padding: 2% 1%;
     border-bottom: 1px solid rgb(211, 204, 204);
 }
 
@@ -11,7 +11,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .brand-logo {
@@ -21,16 +21,16 @@
 
 .brand-name {
     font-weight: 700;
-    padding-left: 10px;
+    padding-left: 4%;
     font-size: 35px;
     color: red;
 }
 
-.login-container {
-    margin-right: 20px;
+.logout-container {
+    margin-right: 2%; 
 }
 
-.login-container a {
+.logout-container a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
@@ -38,8 +38,9 @@
     transition: text-decoration 0.3s;
 }
 
-.login-container a:hover {
+.logout-container a:hover {
     text-decoration: underline;
+    /* Drop down menu ? */
 }
 
 main {
@@ -109,7 +110,7 @@ h1 {
     flex-direction: column;
 
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     border-radius: 18px;
     padding: 10px 16px 15px 16px;
@@ -153,14 +154,14 @@ h1 {
 .col {
     font-size: 13px;
     color: rgb(118, 118, 118);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 22px;
 }
 
 .col-detail {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
 }
 

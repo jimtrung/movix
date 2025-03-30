@@ -58,7 +58,7 @@ main {
     align-items: center;
     text-align: center;
 
-    padding: 15%;  
+    padding: 8%;   
     max-width: 440px;
     width: 100%;
 }
@@ -110,13 +110,21 @@ h1 {
 
 .email-input,
 .password-input {
-    display: block;
-    margin-bottom: 2%;
+    display: flex;
+    margin-bottom: 3%;
     width: 100%;
     box-sizing: border-box;
     height: 56px;
     font-size: 16px;
     padding-left: 4%;
+    border-radius: 8px;
+    border: 2px solid rgb(169, 166, 166);
+    outline: none;
+}
+
+.email-input:focus, 
+.password-input:focus {
+    border: 2px solid red; 
 }
 
 .checkbox-container {
