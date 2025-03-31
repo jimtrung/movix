@@ -94,16 +94,6 @@ main {
     color: rgb(184, 20, 20);
 }
 
-.step-count {
-    font-size: 13px;
-    color: rgb(69, 64, 64);
-}
-
-.count {
-    color: black;
-    font-weight: 500;
-}
-
 h1 {
     font-size: 32px;
     margin: 0;

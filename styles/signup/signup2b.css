@@ -9,6 +9,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .brand-container {
@@ -80,16 +81,6 @@ main {
     flex-direction: column;
     gap: 15px;
     text-align: left;
-}
-
-.step-count {
-    margin-top: 10px;
-    font-size: 13px;
-    color: rgb(69, 64, 64);
-}
-
-.count {
-    color: black;
 }
 
 h1 {
