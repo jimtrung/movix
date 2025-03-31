@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2% 1%;
+    padding: 15px 1%; 
     border-bottom: 1px solid rgb(211, 204, 204);
     background-color: white;
     position: fixed;
@@ -52,7 +52,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 70px;
 }
 
 .main-wrapper {

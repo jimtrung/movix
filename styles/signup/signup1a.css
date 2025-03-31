@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 2%; 
+    padding: 15px 1%; 
     border-bottom: 1px solid rgb(211, 204, 204);
     background-color: white;
     position: fixed;
@@ -53,9 +53,8 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding-bottom: 20%;
-    margin-top: 5%;   
-    padding-top: 25%;
+    padding-bottom: 80px;
+    padding-top: 60px;  
 }
 
 .main-wrapper {
@@ -66,7 +65,7 @@ main {
 
     max-width: 340px;
     width: 100%;
-    padding: 8%;  
+    padding: 100px 8%;   
 }
 
 .main-container {
