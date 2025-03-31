@@ -33,7 +33,7 @@ body {
 
 .brand-container i {
     font-size: 70px;
-}
+} 
 
 .brand-container span {
     font-weight: 700;
@@ -46,6 +46,7 @@ main {
     justify-content: center;
     align-items: center; 
     padding-bottom: 180px;
+    margin-top: 10%;
 }
 
 .main-wrapper {
@@ -177,7 +178,7 @@ h1 {
 .google-login-button:hover,
 .facebook-login-button:hover,
 .login-code:hover {
-    background-color: rgb(224, 215, 215); 
+    background-color: rgb(200, 200, 200);
 } 
 
 .google-login-button:active,
