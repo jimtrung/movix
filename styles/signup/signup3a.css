@@ -1,0 +1,194 @@
+.brand-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 2%;
+}
+
+.brand-logo {
+  font-size: 70px;
+  color: red;
+}
+
+.brand-name {
+  font-weight: 700;
+  padding-left: 4%;
+  font-size: 35px;
+  color: red;
+}
+
+.logout-container {
+  margin-right: 2%;
+}
+
+.logout-container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(34, 33, 33);
+  transition: text-decoration 0.3s;
+}
+
+.logout-container a:hover {
+  text-decoration: underline;
+  /* Drop down menu ? */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 80px;
+  padding-top: 50px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 8px;
+  max-width: 980px;
+  width: 100%;
+  padding: 100px 8%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.step-logo-container i {
+  font-size: 45px;
+  color: rgb(184, 20, 20);
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+  color: rgb(58, 55, 55);
+}
+
+.yapping {
+  font-size: 18px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+}
+
+.desc {
+  margin-bottom: 10px;
+} 
+
+.slogan {
+  font-weight: 700;
+  color: rgb(58, 55, 55);
+}
+
+.payment-methods {
+  max-width: 500px;
+  width: 100%;
+}
+
+.payment-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  max-width: 500px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid rgb(211, 204, 204);
+  background: white;
+  margin-top: 6px;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.payment-method:hover {
+  background: linear-gradient(to right, rgb(239, 76, 76), white);  
+}
+
+.payment-method:active { 
+  background: linear-gradient(to right, rgb(239, 76, 76), rgb(239, 76, 76));    
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.payment-method-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* .credit-card {
+  max-width: 340px;
+  width: 100%;
+}
+
+.e-wallet {
+  max-width: 120px;
+  width: 100%;
+} */
+
+.visa-logo {
+  border: 1px solid rgb(226, 220, 220);
+  padding: 5px 3px;
+  height: 12px;
+}
+
+.mastercard-logo {
+  border: 1px solid rgb(226, 220, 220);
+  padding: 0px 3px;
+  height: 22px;
+}
+
+.amex-logo {
+  border: 1px solid rgb(226, 220, 220);
+  padding: 0px 7px;
+  height: 22px;
+}
+
+.momo-logo {
+  border: 1px solid rgb(226, 220, 220);
+  padding: 3px 9px;
+  height: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .brand-container i {
+    font-size: 35px;
+  }
+
+  .brand-container span {
+    font-size: 20px;
+  }
+
+  .login-container a {
+    font-size: 16px;
+  }
+}

@@ -1,3 +1,33 @@
+body {
+  background: linear-gradient(
+    to right, 
+    rgb(193, 93, 93) 0%, 
+    rgb(202, 202, 104) 33%, 
+    rgb(102, 207, 102) 66%,
+    rgb(114, 114, 214) 100%
+  );   
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 2%;
+  border-bottom: 1px solid rgb(211, 204, 204);
+  background: linear-gradient(
+    to right, 
+    rgb(193, 93, 93) 0%, 
+    rgb(202, 202, 104) 29%, 
+    rgb(102, 207, 102) 54%,
+    rgb(114, 114, 214) 100%
+  );   
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .step-preview-wrapper {
     display: flex;
     justify-content: center;
@@ -66,7 +96,7 @@
 }
 
 .s-text-not-done {  
-    color: rgb(131, 127, 127);
+    color: white;
 }
 
 .s-done { 

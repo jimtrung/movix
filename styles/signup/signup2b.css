@@ -76,7 +76,7 @@ main {
     padding: 0 15px 0px 15x;
 }
 
-.content {
+.content-1 { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,5 +203,15 @@ h1 {
     
     .login-container a { 
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .content-1 {
+        display: none;
+    }
+    
+    .content-2 {
+        display: initial;
     }
 }
