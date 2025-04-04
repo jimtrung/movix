@@ -1,8 +1,12 @@
-document.querySelector('.dropdown-container').addEventListener('click', () => {
-  const dropDown = document.querySelector('.dropdown');
-  if (dropDown.classList.contains('visible')) {
+const dropDown = document.querySelector('.dropdown');
+
+document.body.addEventListener('click', () => {
+  if (dropDown.classList.contains('visible')) { 
     dropDown.classList.remove('visible');
-  } else {
-    dropDown.classList.add('visible');
   }
+});
+
+document.querySelector('.dropdown-container').addEventListener('click', (event) => { 
+  event.stopPropagation();
+  dropDown.classList.toggle('visible');
 });
