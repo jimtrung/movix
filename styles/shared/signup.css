@@ -119,7 +119,7 @@ main {
     position: absolute;
     width: 300%;
     height: 300%;
-    /* background: linear-gradient(45deg, rgb(231, 98, 98) 40%, rgb(205, 216, 86) 50%, rgb(239, 75, 239) 60%); */
+    background: linear-gradient(45deg, rgb(231, 98, 98) 40%, rgb(205, 216, 86) 50%, rgb(239, 75, 239) 60%);
     z-index: -1;
     animation: rotate 20s linear infinite;
     filter: blur(100px);

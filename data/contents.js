@@ -1,22 +1,56 @@
 export const contents = [
   `
-  <header>
     <div class="header-container">
       <a href="home.html" class="brand-container">
         <i class="fa-brands fa-youtube brand-logo"></i>
         <span class="brand-name">MOVIX</span>
       </a>
       <div class="login-container">
-        <a href="index.html">Đăng nhập</a>
+        <a class="dropdown-container"><i class="user-icon fa-solid fa-user"></i></a>
+        <div class="dropdown">
+          <a class="dropdown-item-container" href="login.html">
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </div>
+              </div>
+              <span>Đăng nhập</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a class="dropdown-item-container"> 
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-circle-question"></i>
+                </div>
+              </div>
+              <span>Trợ giúp và hỗ trợ</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a class="dropdown-item-container"> 
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container moon-icon-container"> 
+                  <i class="fa-solid fa-moon"></i>
+                </div>
+              </div>
+              <span>Chế độ tối</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="background"></div>
     <div class="main-wrapper">
       <div class="main-container">
         <div class="content">
-          <div class="step-preview-wrapper"> 
+          <div class="step-preview-wrapper">
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-1"></div>
               <div class="step-preview">
@@ -47,7 +81,7 @@ export const contents = [
             </span>
           </div>
         </div>
-        <button class="next-button" ">Tiếp theo</button>
+        <button class="next-button">Tiếp theo</button>
       </div>
     </div>
   </main>
@@ -65,24 +99,61 @@ export const contents = [
     <select>
       <option>Tiếng Việt</option>
     </select>
-  </footer>`,
-  `<header>
+  </footer>
+  `,
+  `
+  <header>
     <div class="header-container">
-        <a href="home.html" class="brand-container">
-          <i class="fa-brands fa-youtube brand-logo"></i>
-          <span class="brand-name">MOVIX</span>
-        </a>
-        <div class="login-container">
-          <a href="index.html">Đăng nhập</a>
+      <a href="home.html" class="brand-container">
+        <i class="fa-brands fa-youtube brand-logo"></i>
+        <span class="brand-name">MOVIX</span>
+      </a>
+      <div class="login-container">
+        <a class="dropdown-container"><i class="user-icon fa-solid fa-user"></i></a>
+        <div class="dropdown">
+          <a class="dropdown-item-container" href="login.html">
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </div>
+              </div>
+              <span>Đăng nhập</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a class="dropdown-item-container" href="help.html">
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container">
+                  <i class="fa-solid fa-circle-question"></i>
+                </div>
+              </div>
+              <span>Trợ giúp và hỗ trợ</span>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a class="dropdown-item-container"> 
+            <div class="left-dropdown-item">
+              <div class="dropdown-item">
+                <div class="icon-container moon-icon-container"> 
+                  <i class="fa-solid fa-moon"></i>
+                </div>
+              </div>
+              <span>Chế độ tối</span>
+            </div>
+          </a>
         </div>
+      </div>
     </div>
   </header>
 
   <main>
+    <div class="background"></div>
     <div class="main-wrapper">
       <div class="main-container">
         <div class="content">
-          <div class="step-preview-wrapper"> 
+          <div class="step-preview-wrapper">
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-1"></div>
               <div class="step-preview">
@@ -106,17 +177,21 @@ export const contents = [
             <span class="yapping">Chúng tôi cũng chẳng thích thú gì với các loại giấy tờ.</span>
           </div>
           <form>
-            <input class="email-input" type="email" placeholder="Email" required>
-            <input class="password-input" type="password" placeholder="Mật khẩu" required>
+            <input name="email" class="email-input" type="email" placeholder="Email" required> 
+            <input name="password" class="password-input" type="password" placeholder="Mật khẩu" required>
+            <div class="password-eye-icon"> 
+              <i class="pw fa-solid fa-eye"></i>
+              <i class="visible pw fa-solid fa-eye-slash"></i>
+            </div>
             <div class="checkbox-container">
-              <input class="checkbox" type="checkbox">
+              <input id="checkbox" type="checkbox" name="checkbox">
               <label for="checkbox" class="checkbox-description">
                 Vui lòng không gửi các ưu đãi đặc biệt của Movix qua email của tôi
               </label>
             </div>
           </form>
         </div>
-        <button class="next-button" onclick="location.href='signup2a.html'">Tiếp theo</button>
+        <button class="next-button">Tiếp theo</button>
       </div>
     </div>
   </main>
@@ -134,24 +209,28 @@ export const contents = [
     <select>
       <option>Tiếng Việt</option>
     </select>
-  </footer>`,
-  `<header>
+  </footer>
+  `,
+  `
+  <header>
     <div class="header-container">
-        <a href="home.html" class="brand-container">
-          <i class="fa-brands fa-youtube brand-logo"></i>
-          <span class="brand-name">MOVIX</span>
-        </a>
-        <div class="logout-container">
-          <a href="index.html">Đăng xuất</a>
-        </div>
+      <a href="home.html" class="brand-container">
+        <i class="fa-brands fa-youtube brand-logo"></i>
+        <span class="brand-name">MOVIX</span>
+      </a>
+      <div class="logout-container">
+        <span class="email"></span>
+        <a href="index.html">Đăng xuất</a>
+      </div>
     </div>
   </header>
 
   <main>
+    <div class="background"></div>
     <div class="main-wrapper">
       <div class="main-container">
         <div class="content">
-          <div class="step-preview-wrapper"> 
+          <div class="step-preview-wrapper">
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-2"></div>
               <div class="step-preview">
@@ -188,7 +267,7 @@ export const contents = [
             </div>
           </div>
         </div>
-        <button class="next-button" onclick="location.href='signup2b.html'">Tiếp theo</button>
+        <button class="next-button">Tiếp theo</button>
       </div>
     </div>
   </main>
@@ -206,24 +285,27 @@ export const contents = [
     <select>
       <option>Tiếng Việt</option>
     </select>
-  </footer>`,
-  `<header>
+  </footer>
+  `,
+  `
+  <header>
     <div class="header-container">
       <a href="home.html" class="brand-container">
         <i class="fa-brands fa-youtube brand-logo"></i>
         <span class="brand-name">MOVIX</span>
       </a>
       <div class="logout-container">
-        <a href="index.html">Đăng nhập</a>
+        <a href="index.html">Đăng xuất</a>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="background"></div>
     <div class="main-wrapper">
       <div class="main-container">
-        <div class="content-1"> 
-          <div class="step-preview-wrapper"> 
+        <div class="content-1">
+          <div class="step-preview-wrapper">
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-2"></div>
               <div class="step-preview">
@@ -240,10 +322,10 @@ export const contents = [
               </div>
             </div>
           </div>
-          
+
           <h1>Chọn gói dịch vụ phù hợp với bạn</h1>
           <div class="pricing-container">
-            <div class="pack-container">
+            <div class="pack-container mobile-pack">
               <div class="pack-header mobile">
                 <span class="pack-name">Di động</span>
                 <span class="quality">480p</span>
@@ -283,7 +365,7 @@ export const contents = [
                 </div>
               </div>
             </div>
-            <div class="pack-container">
+            <div class="pack-container basic-pack"> 
               <div class="pack-header basic">
                 <span class="pack-name">Cơ bản</span>
                 <span class="quality">720p</span>
@@ -323,7 +405,7 @@ export const contents = [
                 </div>
               </div>
             </div>
-            <div class="pack-container">
+            <div class="pack-container standard-pack"> 
               <div class="pack-header standard">
                 <span class="pack-name">Tiêu chuẩn</span>
                 <span class="quality">1080p</span>
@@ -363,7 +445,8 @@ export const contents = [
                 </div>
               </div>
             </div>
-            <div class="pack-container">
+
+            <div class="pack-container luxury-pack"> 
               <div class="pack-header luxury">
                 <span class="pack-name">Cao cấp</span>
                 <span class="quality">4K + HDR</span>
@@ -410,9 +493,9 @@ export const contents = [
             </div>
           </div>
           <div class="next-button-container">
-            <button class="next-button" onclick="location.href='signup3a.html'">Tiếp theo</button>
+            <button class="next-button">Tiếp theo</button>
           </div>
-          
+
           <div class="content-2">
             <!-- Javascript required  -->
           </div>
@@ -433,8 +516,10 @@ export const contents = [
     <select>
       <option>Tiếng Việt</option>
     </select>
-  </footer>`,
-  `<header>
+  </footer>
+  `,
+  `
+  <header>
     <div class="header-container">
       <a href="home.html" class="brand-container">
         <i class="fa-brands fa-youtube brand-logo"></i>
@@ -447,6 +532,7 @@ export const contents = [
   </header>
 
   <main>
+    <div class="background"></div>
     <div class="main-wrapper">
       <div class="main-container">
         <div class="content">
@@ -482,29 +568,29 @@ export const contents = [
 
           <div class="payment-methods">
             <button class="payment-method">
-              <div class="left-side"> 
-                <div class="payment-desc">Thẻ ghi nợ hoặc thẻ tín dụng</div> 
-                <div class="payment-method-icons credit-card">   
-                  <img class="visa-logo" src="assets/visa_logo.png">  
-                  <img class="mastercard-logo" src="assets/mastercard_logo.png">   
-                  <img class="amex-logo" src="assets/amex_logo.png">    
+              <div class="left-side">
+                <div class="payment-desc">Thẻ ghi nợ hoặc thẻ tín dụng</div>
+                <div class="payment-method-icons credit-card">
+                  <img class="visa-logo" src="assets/visa_logo.png">
+                  <img class="mastercard-logo" src="assets/mastercard_logo.png">
+                  <img class="amex-logo" src="assets/amex_logo.png">
                 </div>
               </div>
               <i class="fa-solid fa-chevron-right"></i>
             </button>
             <button class="payment-method">
-              <div class="left-side"> 
+              <div class="left-side">
                 <div class="payment-desc">Ví điện tử</div>
-                <div class="payment-method-icons e-wallet"> 
-                  <img class="momo-logo" src="assets/momo_logo.png">      
+                <div class="payment-method-icons e-wallet">
+                  <img class="momo-logo" src="assets/momo_logo.png">
                 </div>
               </div>
               <i class="fa-solid fa-chevron-right"></i>
             </button>
             <button class="payment-method">
-              <div class="left-side"> 
-                <div class="payment-desc">Thẻ nội địa</div> 
-                <div class="payment-method-icons domestic-card">    
+              <div class="left-side">
+                <div class="payment-desc">Thẻ nội địa</div>
+                <div class="payment-method-icons domestic-card">
                 </div>
               </div>
               <i class="fa-solid fa-chevron-right"></i>
@@ -526,5 +612,6 @@ export const contents = [
     <select>
       <option>Tiếng Việt</option>
     </select>
-  </footer>`,
-]; 
+  </footer>
+  `,
+]

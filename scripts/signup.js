@@ -1,4 +1,6 @@
 import { contents } from '../data/contents.js'; 
+import { ToggleDropdown } from './dropdown.js';
+import { TogglePassword } from './passwordToggle.js';
 
 function replaceCssFile(filepath) {
   let link = document.querySelector("link[rel='stylesheet']");
@@ -10,27 +12,26 @@ function getFilePath(pageIndex) {
   if (pageIndex % 2 !== 0) {
     alter = 'b';
   }
-  return `../styles/signup/signup${parseInt(pageIndex + 1 / 2)}${alter}.css`;  
+  return `../styles/signup/signup${parseInt((pageIndex + 2) / 2)}${alter}.css`;  
+}
+
+function renderPage(pageIndex) { 
+  document.querySelector('.x').innerHTML = contents[pageIndex];  
+
+  document.querySelector('.next-button').addEventListener('click', () => {
+    pageIndex++;
+    console.log(pageIndex);
+    const filePath = getFilePath(pageIndex);
+    console.log(filePath);
+    document.querySelector('.x').innerHTML = contents[pageIndex];  
+    replaceCssFile(filePath); 
+    renderPage(pageIndex);
+  }); 
+
+  ToggleDropdown();
+  TogglePassword();
 }
 
 // ============== MAIN ================ //
-const pageIndex = 0;
-document.body.innerHTML = contents[pageIndex];  
-
-document.querySelector('.next-button').addEventListener('click', () => {
-  pageIndex++;
-  if (pageIndex === 1) {
-    const email = document.querySelector('.email-input').value;
-    const password = document.querySelector('.password-input').value;
-    // Store in local storage ?
-    localStorage.setItem('email', email);
-  }
-  
-  if (pageIndex > 1) {
-    document.querySelector('.email').innerHTML = localStorage.getItem('email');
-  }
-
-  document.body.innerHTML = contents[pageIndex]; 
-  const filePath = getFilePath(pageIndex);
-  replaceCssFile(filePath); 
-}); 
+let pageIndex = 0;
+renderPage(pageIndex);
