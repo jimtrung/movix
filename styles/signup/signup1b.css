@@ -1,17 +1,9 @@
-.login-container {
-    margin-right: 2%; 
-}
-
 .login-container a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: rgb(34, 33, 33);
     transition: text-decoration 0.3s;
-}
-
-.login-container a:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -69,6 +61,10 @@ h1 {
     display: block;
 }
 
+form {
+    position: relative;
+}
+
 .email-input,
 .password-input {
     display: flex;
@@ -88,6 +84,24 @@ h1 {
     border: 2px solid red; 
 }
 
+.password-eye-icon {
+    position: relative;
+}
+
+.pw {
+    position: absolute;
+    right: 12px; 
+    bottom: 33px;
+    font-size: 14px;
+    cursor: pointer;
+    display: none !important; 
+    z-index: 100;
+} 
+
+.visible {
+    display: block !important;   
+}
+
 .checkbox-container {
     display: grid;
     grid-template-columns: 28px 1fr;
@@ -96,6 +110,7 @@ h1 {
 
 .checkbox {
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 .checkbox-description {
