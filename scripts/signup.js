@@ -12,7 +12,7 @@ function getFilePath(pageIndex) {
   if (pageIndex % 2 !== 0) {
     alter = 'b';
   }
-  return `./styles/signup/signup${parseInt((pageIndex + 2) / 2)}${alter}.css`;  
+  return `/styles/signup/signup${parseInt((pageIndex + 2) / 2)}${alter}.css`;  
 }
 
 function renderPage(pageIndex) { 
