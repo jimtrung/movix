@@ -16,12 +16,12 @@ function getFilePath(pageIndex) {
 }
 
 function renderPage(pageIndex) { 
-  document.querySelector('.x').innerHTML = contents[pageIndex];  
+  document.querySelector('.target').innerHTML = contents[pageIndex];  
 
   document.querySelector('.next-button').addEventListener('click', () => {
     pageIndex++;
     const filePath = getFilePath(pageIndex);
-    document.querySelector('.x').innerHTML = contents[pageIndex];  
+    document.querySelector('.target').innerHTML = contents[pageIndex];  
     replaceCssFile(filePath); 
     renderPage(pageIndex);
   }); 
