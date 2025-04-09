@@ -54,15 +54,15 @@ export const contents = [
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-1"></div>
               <div class="step-preview">
-                <span class="s-count s-done">1</span>
+                <a class="s-count s-done" href="#">1</a>
                 <span class="s-text s-text-done">Tạo tài khoản</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-not-done">2</span>
+                <a class="s-count s-not-done" href="#">2</a>
                 <span class="s-text s-text-not-done">Chọn gói đăng ký</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-not-done">3</span>
+                <a class="s-count s-not-done" href="#">3</a>
                 <span class="s-text s-text-not-done">Phương thức thanh toán</span>
               </div>
             </div>
@@ -157,15 +157,15 @@ export const contents = [
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-1"></div>
               <div class="step-preview">
-                <span class="s-count s-done">1</span>
+                <a class="s-count s-done" href="#">1</a>
                 <span class="s-text s-text-done">Tạo tài khoản</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-not-done">2</span>
+                <a class="s-count s-not-done" href="#">2</a>
                 <span class="s-text s-text-not-done">Chọn gói đăng ký</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-not-done">3</span>
+                <a class="s-count s-not-done" href="#">3</a>
                 <span class="s-text s-text-not-done">Phương thức thanh toán</span>
               </div>
             </div>
@@ -295,6 +295,7 @@ export const contents = [
         <span class="brand-name">MOVIX</span>
       </a>
       <div class="logout-container">
+        <span class="email"></span>
         <a href="index.html">Đăng xuất</a>
       </div>
     </div>
@@ -309,15 +310,15 @@ export const contents = [
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-2"></div>
               <div class="step-preview">
-                <span class="s-count s-done">1</span>
+                <a class="s-count s-done" href="#">1</a>
                 <span class="s-text s-text-done">Tạo tài khoản</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-done">2</span>
+                <a class="s-count s-done" href="#">2</a>
                 <span class="s-text s-text-done">Chọn gói đăng ký</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-not-done">3</span>
+                <a class="s-count s-not-done" href="#">3</a>
                 <span class="s-text s-text-not-done">Phương thức thanh toán</span>
               </div>
             </div>
@@ -518,7 +519,7 @@ export const contents = [
     </select>
   </footer>
   `,
-  `
+  ` 
   <header>
     <div class="header-container">
       <a href="home.html" class="brand-container">
@@ -526,6 +527,7 @@ export const contents = [
         <span class="brand-name">MOVIX</span>
       </a>
       <div class="logout-container">
+        <span class="email"></span>
         <a href="index.html">Đăng xuất</a>
       </div>
     </div>
@@ -540,15 +542,15 @@ export const contents = [
             <div class="step-preview-container">
               <div class="progress-bar progress-bar-3"></div>
               <div class="step-preview">
-                <span class="s-count s-done">1</span>
+                <a class="s-count s-done" href="#">1</a>
                 <span class="s-text s-text-done">Tạo tài khoản</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-done">2</span>
+                <a class="s-count s-done" href="#">2</a>
                 <span class="s-text s-text-done">Chọn gói đăng ký</span>
               </div>
               <div class="step-preview">
-                <span class="s-count s-done">3</span>
+                <a class="s-count s-done" href="#">3</a>
                 <span class="s-text s-text-done">Phương thức thanh toán</span>
               </div>
             </div>
