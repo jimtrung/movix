@@ -1,9 +1,10 @@
 .logout-container {
     display: flex;
-    max-width: 270px;
-    justify-content: space-between;
+    justify-content: right; 
     align-items: center;
+    max-width: 340px;
     width: 100%;
+    gap: 2%;
 }
 
 .email {

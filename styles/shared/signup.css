@@ -189,6 +189,7 @@ main {
 
 .s-count {
     text-decoration: none;
+    cursor: inherit;
 }
 
 .s-text {
@@ -211,6 +212,18 @@ main {
     border-radius: 50%;
     color: white;
     background-color: rgb(224, 31, 31);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.s-done:hover {
+    transform: scale(1.3);
+}
+
+.animate {
+    color: rgb(224, 31, 31);
+    transform: scale(999);
+    z-index: 200; 
 }
 
 .s-not-done {
