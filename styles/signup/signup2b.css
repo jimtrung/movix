@@ -33,12 +33,14 @@ main {
 
 .main-wrapper {
     color: black;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     margin-bottom: 85px;
+    width: 100%;
+    max-width: 1024px;
 }
 
 .main-container {
@@ -184,7 +186,46 @@ h1 {
     background-color: rgb(162, 7, 7);
 }
 
-@media screen and (max-width: 500px) {
+/* Content 2 */
+.content-2 {
+    background-color: aliceblue;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 3px;
+    display: none;
+    max-width: 800px;
+    width: 100%;
+}
+
+.subscription-headers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2.5fr;  
+    color: white;
+    font-weight: 500;
+    gap: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px;
+}
+
+.subscription-header-container {
+    padding: 10px 10px;
+    border: 2px solid black;
+    height: 70px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.subscription-header-container:hover {
+    transform: scale(1.05);
+}
+
+.picked {
+    border: 2px solid purple;    
+    box-shadow: -2px 2px 10px rgba(115, 0, 255, 0.8);
+}
+
+@media screen and (max-width: 535px) { 
     .brand-container i {
         font-size: 35px;
     }
@@ -196,9 +237,13 @@ h1 {
     .login-container a {
         font-size: 16px;
     }
+    
+    .email {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .content-1 {
         display: none;
     }
