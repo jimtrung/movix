@@ -1,6 +1,6 @@
 .logout-container {
     display: flex;
-    justify-content: right; 
+    justify-content: right;
     align-items: center;
     max-width: 340px;
     width: 100%;
@@ -196,7 +196,7 @@ h1 {
     border: 2px solid white;
     border-radius: 8px;
     padding: 3px;
-    max-width: 800px; 
+    max-width: 800px;
     width: 100%;
     margin-top: 20px;
 }
@@ -206,17 +206,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1%;
     max-width: 800px;
     width: 100%;
 }
 
-.left-button, .right-button {
+.left-button,
+.right-button {
     position: absolute;
     z-index: 999;
     cursor: pointer;
-    background-color: black;  
-    opacity: 0.1; 
+    background-color: black;
+    opacity: 0.1;
     color: white;
     border: none;
     padding: 40px 6px;
@@ -225,7 +226,8 @@ h1 {
     transition: opacity 0.3s;
 }
 
-.left-button:hover, .right-button:hover {
+.left-button:hover,
+.right-button:hover {
     opacity: 0.6;
 }
 
@@ -241,7 +243,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 1%;
     overflow: auto;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -249,7 +251,6 @@ h1 {
     border-radius: 8px;
     max-width: 800px;
     width: 100%;
-    max-width: 100%;
 }
 
 .subscription-headers-container {
@@ -258,7 +259,8 @@ h1 {
     font-weight: 500;
     gap: 10px;
     cursor: pointer;
-    width: 300%; 
+    width: 100%;
+    max-width: 1200px;
 }
 
 .subscription-header-container {
@@ -267,33 +269,42 @@ h1 {
     height: 70px;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
-    min-width: 200px;
+    min-width: 180px;
+    max-width: 800px;
     width: 100%;
 }
 
 .subscription-header-container:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: -5px 5px 10px rgba(115, 0, 255, 0.8);
 }
 
 .picked {
-    border: 2px solid purple;    
+    border: 2px solid purple;
     box-shadow: -2px 2px 10px rgba(115, 0, 255, 0.8);
 }
 
 .hr-detail {
-    max-width: 700px; 
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+}
+
+.subscription-detail-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
     width: 100%;
 }
 
 .subscription-detail-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 10px 20px 20px 20px;
-    max-width: 800px;
     width: 100%;
 }
 
-@media screen and (max-width: 535px) { 
+@media screen and (max-width: 535px) {
     .brand-container i {
         font-size: 35px;
     }
@@ -305,7 +316,7 @@ h1 {
     .login-container a {
         font-size: 16px;
     }
-    
+
     .email {
         display: none;
     }
@@ -320,5 +331,9 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto 0 0; 
     }
 }
