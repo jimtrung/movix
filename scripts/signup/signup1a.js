@@ -1,4 +1,4 @@
-import { ToggleDropdown } from '../dropdown.js';
+import { ToggleDropdown } from '../utils/dropdown.js';
 
 // ============== MAIN ================ //
 ToggleDropdown();

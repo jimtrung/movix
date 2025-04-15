@@ -135,7 +135,6 @@ main {
     }
 }
 
-
 .step-preview-wrapper {
     display: flex;
     justify-content: center;
@@ -223,7 +222,7 @@ main {
 .animate {
     color: rgb(224, 31, 31);
     transform: scale(999);
-    z-index: 200; 
+    z-index: 200;
 }
 
 .s-not-done {

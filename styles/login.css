@@ -33,7 +33,7 @@ body {
 
 .brand-container i {
     font-size: 70px;
-} 
+}
 
 .brand-container span {
     font-weight: 700;
@@ -44,14 +44,14 @@ body {
 main {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding-bottom: 180px;
     margin-top: 30px;
 }
 
 .main-wrapper {
     color: white;
-    padding: 5% 1%;  
+    padding: 5% 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,10 +70,10 @@ main {
     width: 100%;
 }
 
-.login-form-container { 
+.login-form-container {
     display: flex;
     flex-direction: column;
-    padding: 2% 4%;  
+    padding: 2% 4%;
     max-width: 322px;
     width: 100%;
 }
@@ -113,16 +113,16 @@ h1 {
 
 .pw {
     position: absolute;
-    right: 8px; 
+    right: 8px;
     bottom: 15px;
     font-size: 14px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.2);
-    display: none !important; 
-} 
+    display: none !important;
+}
 
 .visible {
-    display: block !important;   
+    display: block !important;
 }
 
 .checkbox {
@@ -169,7 +169,7 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    transition: opacity 0.3s, background-color 0.3s, color 0.3s;   
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .oauth-login {
@@ -184,7 +184,7 @@ h1 {
     display: flex;
     cursor: pointer;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     background-color: rgb(221, 221, 221);
     border-radius: 4px;
     border: none;
@@ -197,12 +197,12 @@ h1 {
 .facebook-login-button:hover,
 .login-code:hover {
     background-color: rgb(200, 200, 200);
-} 
+}
 
 .google-login-button:active,
 .facebook-login-button:active,
 .login-code:active {
-    background-color: black;  
+    background-color: black;
     color: white;
 }
 
@@ -213,19 +213,19 @@ h1 {
     transition: color 0.3s;
 }
 
-.google-login-button p, 
+.google-login-button p,
 .facebook-login-button p {
     display: flex;
     gap: 0;
 }
 
-.google-login-button p span,  
-.facebook-login-button p span { 
-    transition: color 0.4s;   
+.google-login-button p span,
+.facebook-login-button p span {
+    transition: color 0.4s;
 }
 
 .google-login-button:hover .google-icon {
-    color: rgb(234, 67, 53); 
+    color: rgb(234, 67, 53);
 }
 
 .facebook-login-button:hover .facebook-icon {
@@ -233,20 +233,20 @@ h1 {
 }
 
 .google-login-button:hover .blue {
-    color: rgb(66, 133, 244); 
-} 
+    color: rgb(66, 133, 244);
+}
 
-.google-login-button:hover .red { 
-    color: rgb(234, 67, 53); 
-} 
+.google-login-button:hover .red {
+    color: rgb(234, 67, 53);
+}
 
-.google-login-button:hover .yellow {  
-    color: rgb(251, 188, 5); 
-} 
+.google-login-button:hover .yellow {
+    color: rgb(251, 188, 5);
+}
 
-.google-login-button:hover .green {   
-    color: rgb(52, 168, 83); 
-} 
+.google-login-button:hover .green {
+    color: rgb(52, 168, 83);
+}
 
 .other-options {
     display: flex;
@@ -270,7 +270,7 @@ h1 {
 }
 
 .forgot-password {
-    margin-top: 8px; 
+    margin-top: 8px;
     cursor: pointer;
     color: white;
     transition: opacity 0.3s, color 0.3s, box-shadow 0.3s;
@@ -279,7 +279,7 @@ h1 {
 .forgot-password:hover {
     opacity: 0.8;
     color: aqua;
-    text-shadow: 0px 4px 10px rgba(12, 151, 206, 0.7);  
+    text-shadow: 0px 4px 10px rgba(12, 151, 206, 0.7);
 }
 
 @media screen and (max-width: 500px) {
@@ -290,7 +290,7 @@ h1 {
 
     .brand-container {
         padding: 10px 0px 0px 10px;
-        gap: 0%; 
+        gap: 0%;
     }
 
     .brand-container i {
@@ -300,9 +300,13 @@ h1 {
     .brand-container span {
         font-size: 20px;
     }
-    
+
     .email-input,
     .password-input {
         width: 90%;
+    }
+
+    .pw {
+        right: 5%;
     }
 }

@@ -1,6 +1,6 @@
 .logout-container {
   display: flex;
-  justify-content: right; 
+  justify-content: right;
   align-items: center;
   max-width: 340px;
   width: 100%;
@@ -135,16 +135,6 @@ h1 {
   gap: 5px;
 }
 
-/* .credit-card {
-  max-width: 340px;
-  width: 100%;
-}
-
-.e-wallet {
-  max-width: 120px;
-  width: 100%;
-} */
-
 .visa-logo {
   border: 1px solid rgb(226, 220, 220);
   padding: 5px 3px;
@@ -180,5 +170,23 @@ h1 {
 
   .login-container a {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  .brand-container i {
+    font-size: 35px;
+  }
+
+  .brand-container span {
+    font-size: 20px;
+  }
+
+  .login-container a {
+    font-size: 16px;
+  }
+
+  .email {
+    display: none;
   }
 }

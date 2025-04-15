@@ -11,8 +11,8 @@ main {
     justify-content: center;
     align-items: center;
 
-    padding-bottom: 80px; 
-    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-top: 50px;
 }
 
 .main-wrapper {
@@ -21,7 +21,7 @@ main {
     align-items: center;
     text-align: center;
 
-    padding: 100px 8%;    
+    padding: 100px 8%;
     max-width: 440px;
     width: 100%;
 }
@@ -39,8 +39,31 @@ main {
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
     text-align: left;
+}
+
+.notification-container {
+    text-align: center;
+    background-color: white;
+    width: 160px;
+    padding: 10px 0 8px 0;
+    position: absolute;
+    top: 60px;
+    left: 44%;
+    right: 56%;
+    display: none;
+    z-index: 1001;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 5px; 
+    right: 8px;
+    font-size: 13px;
 }
 
 h1 {
@@ -79,9 +102,9 @@ form {
     outline: none;
 }
 
-.email-input:focus, 
+.email-input:focus,
 .password-input:focus {
-    border: 2px solid red; 
+    border: 2px solid red;
 }
 
 .password-eye-icon {
@@ -90,16 +113,16 @@ form {
 
 .pw {
     position: absolute;
-    right: 12px; 
+    right: 12px;
     bottom: 33px;
     font-size: 14px;
     cursor: pointer;
-    display: none !important; 
+    display: none !important;
     z-index: 100;
-} 
+}
 
 .visible {
-    display: block !important;   
+    display: block !important;
 }
 
 .checkbox-container {
@@ -127,7 +150,7 @@ form {
     font-weight: 500;
     width: 100%;
     border: none;
-    cursor: pointer;    
+    cursor: pointer;
     border-radius: 4px;
     margin-top: 15px;
     transition: background-color 0.3s;
@@ -184,8 +207,8 @@ select {
     .brand-container span {
         font-size: 20px;
     }
-    
-    .login-container a { 
+
+    .login-container a {
         font-size: 16px;
     }
 }

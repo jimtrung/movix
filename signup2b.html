@@ -14,13 +14,13 @@
 <body>
   <header>
     <div class="header-container">
-      <a href="home.html" class="brand-container">
+      <a href="index.html" class="brand-container">
         <i class="fa-brands fa-youtube brand-logo"></i>
         <span class="brand-name">MOVIX</span>
       </a>
       <div class="logout-container">
         <span class="email"></span>
-        <a href="index.html">Đăng xuất</a>
+        <a class="logout" href="index.html">Đăng xuất</a>
       </div>
     </div>
   </header>
@@ -50,12 +50,12 @@
 
           <h1>Chọn gói dịch vụ phù hợp với bạn</h1>
           <div class="pricing-container">
-            <div class="pack-container mobile-pack">
-              <div class="pack-header mobile">
+            <div class="pack-container mobile-pack" data-pack="mobile"> 
+              <div class="pack-header mobile"> 
                 <span class="pack-name">Di động</span>
                 <span class="quality">480p</span>
                 <span class="picked-icon-container">
-                  <i class="invisible picked-icon fa-solid fa-circle-check"></i>
+                  <i class="invisible picked-icon fa-solid fa-circle-check mobile-icon"></i> 
                 </span>
               </div>
               <div class="pack-description">
@@ -90,12 +90,12 @@
                 </div>
               </div>
             </div>
-            <div class="pack-container basic-pack">
+            <div class="pack-container basic-pack" data-pack="basic"> 
               <div class="pack-header basic">
                 <span class="pack-name">Cơ bản</span>
                 <span class="quality">720p</span>
                 <span class="picked-icon-container">
-                  <i class="invisible picked-icon fa-solid fa-circle-check"></i>
+                  <i class="invisible picked-icon fa-solid fa-circle-check basic-icon"></i>
                 </span>
               </div>
               <div class="pack-description">
@@ -130,12 +130,12 @@
                 </div>
               </div>
             </div>
-            <div class="pack-container standard-pack">
+            <div class="pack-container standard-pack" data-pack="standard"> 
               <div class="pack-header standard">
                 <span class="pack-name">Tiêu chuẩn</span>
                 <span class="quality">1080p</span>
                 <span class="picked-icon-container">
-                  <i class="invisible picked-icon fa-solid fa-circle-check"></i>
+                  <i class="invisible picked-icon fa-solid fa-circle-check standard-icon"></i>
                 </span>
               </div>
               <div class="pack-description">
@@ -170,12 +170,12 @@
                 </div>
               </div>
             </div>
-            <div class="pack-container luxury-pack">
+            <div class="pack-container luxury-pack" data-pack="luxury"> 
               <div class="pack-header luxury">
                 <span class="pack-name">Cao cấp</span>
                 <span class="quality">4K + HDR</span>
                 <span class="picked-icon-container">
-                  <i class="picked-icon fa-solid fa-circle-check"></i>
+                  <i class="picked-icon fa-solid fa-circle-check luxury-icon"></i>
                 </span>
               </div>
               <div class="pack-description">
@@ -324,6 +324,7 @@
     </select>
   </footer>
   <script type="module" src="scripts/signup/signup2b.js"></script>
+  <script src="scripts/general.js"></script>
 </body>
 
 </html>
