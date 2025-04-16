@@ -1,5 +1,7 @@
 export function LogOut() {
-  document.querySelector('.logout').addEventListener('click', () => {
-    localStorage.clear();
+  document.querySelectorAll('.logout').forEach(e => {
+    e.addEventListener('click', () => {
+      localStorage.clear();
+    });
   });
 }
