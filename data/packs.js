@@ -44,3 +44,16 @@ export const packs = [
     "price": 260000
   },
 ];
+
+export function FindPack(packTag) {
+  let foundPack;
+  packs.forEach(pack => {
+    if (pack.tag === packTag) {
+      foundPack = pack;
+    }
+  });
+  if (foundPack === undefined) {
+    throw new Error("Cannot find pack");
+  }
+  return foundPack
+}

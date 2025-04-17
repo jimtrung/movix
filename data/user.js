@@ -1,7 +1,7 @@
 const users = JSON.parse(localStorage.getItem('users')) || [{ 
   "email": "trung@gmail.com",
   "password": "123",
-  "pack": "none",
+  "pack": "luxury",
 }];
 
 export function Login(email, password) {
@@ -46,11 +46,24 @@ export function LogOut() {
   });
 }
 
-export function setPack(email, pack) {
+export function SetPack(email, pack) {
   users.forEach(user => {
     if (user.email === email) {
       user.pack = pack;
     }
   });
   localStorage.setItem('users', JSON.stringify(users));
+}
+
+export function FindUser(email) {
+  let foundUser;
+  users.forEach(user => {
+    if (user.email === email) {
+      foundUser = user;
+    }
+  });
+  if (foundUser === undefined) {
+    throw new Error("Cannot find user");
+  }
+  return foundUser;
 }

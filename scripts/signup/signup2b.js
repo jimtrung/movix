@@ -1,5 +1,5 @@
 import { packs } from "../../data/packs.js";
-import { LogOut, setPack } from "../../data/user.js";   
+import { LogOut, SetPack } from "../../data/user.js";   
 import { MoneyToString } from "../utils/moneyToString.js";
 
 // =================== MAIN ================== //
@@ -12,7 +12,7 @@ document.querySelector('.email').innerHTML = email;
 let packsHTML = "";
 packs.forEach(pack => {
   packsHTML += `
-      <div class="pack-container mobile-pack" data-pack="mobile">
+      <div class="pack-container ${pack.tag}-pack" data-pack="${pack.tag}">
         <div class="pack-header ${pack.tag}">
           <span class="pack-name">${pack.name}</span>
           <span class="quality">${pack.quality}</span>
@@ -69,7 +69,7 @@ document.querySelectorAll('.pack-container').forEach((pack) => {
 });
 
 document.querySelector('.next-button').addEventListener('click', () => {
-  setPack(email, pickedPack);
+  SetPack(email, pickedPack);
   
   window.location.href = 'signup3a.html';
 });
