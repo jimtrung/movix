@@ -44,28 +44,6 @@ main {
     text-align: left;
 }
 
-.notification-container {
-    text-align: center;
-    background-color: white;
-    width: 160px;
-    padding: 10px 0 8px 0;
-    position: absolute;
-    top: 60px;
-    left: 44%;
-    right: 56%;
-    display: none;
-    z-index: 1001;
-}
-
-.fa-xmark {
-    cursor: pointer;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 5px; 
-    right: 8px;
-    font-size: 13px;
-}
-
 h1 {
     font-size: 32px;
     margin: 0;

@@ -1,4 +1,4 @@
-import { LogOut } from "../utils/logout.js";   
+import { LogOut } from "../../data/user.js";   
 
 // =============== MAIN ================ //
 LogOut();

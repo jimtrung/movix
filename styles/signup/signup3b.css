@@ -28,9 +28,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding-bottom: 80px;
-  padding-top: 30px;
+  padding: 60px 2%;
 }
 
 .main-wrapper {
@@ -38,11 +36,12 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   max-width: 800px;
   width: 100%;
-  padding: 100px 5%;
+  padding: 60px 3%;
+  margin-right: 30px;
 }
 
 .main-container {
@@ -50,8 +49,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  max-width: 800px;
   width: 100%;
 }
 
@@ -59,62 +56,107 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-  
-  max-width: 800px;
-  width: 100% 
+  gap: 20px;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
 }
 
 .payment-container {
   display: flex;
-  gap: 5%;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
   text-align: left;
-  justify-content: space-between;  
-  
-  max-width: 550px;
-  width: 100%; 
+  background-color: rgb(255, 255, 255);
+  padding: 25px 4%;  
+  border-radius: 10px;
 }
 
-.payment-info {
+hr {
   display: flex;
-  gap: 3%; 
-  
-  max-width: 500px;
+  width: 100%;
+  max-width: 590px;
+}
+
+.pack-info {
+  max-width: 230px;
+  width: 100%;
+}
+
+.pack-info .pack {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.pack-info .info,
+.total-cost {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.total-cost {
+  font-weight: 700;
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
   width: 100%;
 }
 
 .qr-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 8px;
+  font-size: 15px;
+  color: rgb(68, 68, 68);
 }
 
 .qr-container i {
   font-size: 22px;
-  color: lightblue;  
-  margin-right: 1%;
+  color: rgb(0, 170, 255);
 }
 
 .qr-code {
   height: 200px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
 }
 
 .detail-container {
-  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .brand-container i {
-    font-size: 35px;
+.detail-container div {
+  display: flex;
+  max-width: 200px;
+  width: 100%;
+  text-align: right;
+}
+
+.detail-container span {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 730px) {
+  .payment-container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .brand-container span {
-    font-size: 20px;
-  }
-
-  .login-container a {
-    font-size: 16px;
+  .pack-info,
+  .payment-method {
+    width: 100%;
+    max-width: 600px;
   }
 }
 
