@@ -19,18 +19,17 @@
     cursor: pointer;
     text-decoration: none;
     margin-left: 1%;
+    color: white;
 }
 
 .brand-logo {
     font-size: 60px;
-    color: white;
 }
 
 .brand-name {
     font-weight: 700;
     padding-left: 4%;
     font-size: 30px;
-    color: white;
 }
 
 .dropdown-container {
@@ -121,7 +120,7 @@ main {
     height: 300%;
     background: linear-gradient(45deg, rgb(191, 55, 55) 40%, rgb(175, 177, 43) 50%, rgb(180, 57, 180) 60%);
     z-index: -1;
-    animation: rotate 20s linear infinite;
+    /* animation: rotate 20s linear infinite; */
     filter: blur(100px);
 }
 
