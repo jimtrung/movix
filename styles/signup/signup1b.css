@@ -186,6 +186,18 @@ select {
         font-size: 20px;
     }
 
+    h1 {
+        font-size: 24px;
+    }
+    
+    .yapping {
+        font-size: 16px;
+    }
+    
+    .checkbox-description {
+        font-size: 14px;
+    }
+
     .login-container a {
         font-size: 16px;
     }

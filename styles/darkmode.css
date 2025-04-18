@@ -62,48 +62,48 @@ body.dark-mode .s-not-done {
 
 body.dark-mode .background {
   background: linear-gradient(45deg,
-    rgb(90, 0, 90) 40%,
-    rgb(60, 60, 20) 50%,
-    rgb(80, 0, 100) 60%);
+      rgb(90, 0, 90) 40%,
+      rgb(60, 60, 20) 50%,
+      rgb(80, 0, 100) 60%);
   filter: blur(100px) brightness(0.5);
 }
 
 body.dark-mode .progress-bar-1 {
   background: linear-gradient(to right,
-    rgb(68, 68, 68) 0%,
-    rgb(68, 68, 68) 100%);
+      rgb(68, 68, 68) 0%,
+      rgb(68, 68, 68) 100%);
 }
 
 body.dark-mode .progress-bar-2 {
   background: linear-gradient(to right,
-    rgb(200, 50, 50) 0%,
-    rgb(200, 50, 50) 50%,
-    rgb(68, 68, 68) 50%,
-    rgb(68, 68, 68) 100%);
+      rgb(200, 50, 50) 0%,
+      rgb(200, 50, 50) 50%,
+      rgb(68, 68, 68) 50%,
+      rgb(68, 68, 68) 100%);
 }
 
 body.dark-mode .progress-bar-3 {
   background: linear-gradient(to right,
-    rgb(200, 50, 50) 0%,
-    rgb(200, 50, 50) 100%);
+      rgb(200, 50, 50) 0%,
+      rgb(200, 50, 50) 100%);
 }
 
 body.dark-mode h1 {
   color: rgb(187, 187, 187);
 }
 
-body.dark-mode .yapping { 
+body.dark-mode .yapping {
   color: rgb(158, 158, 158);
 }
 
 body.dark-mode input {
   color: white;
-  background-color: rgba(80, 80, 80, 0.6); 
+  background-color: rgba(80, 80, 80, 0.6);
 }
 
-body.dark-mode input:focus { 
+body.dark-mode input:focus {
   color: white;
-  background-color: rgba(80, 80, 80, 0.6); 
+  background-color: rgba(80, 80, 80, 0.6);
 }
 
 body.dark-mode .pw {
@@ -118,6 +118,16 @@ body.dark-mode .pack-container {
   background-color: black;
 }
 
-body.dark-mode .col-detail { 
+body.dark-mode .col-detail {
   color: white;
+}
+
+@media screen and (max-width: 1186px) {
+  body.dark-mode .dropdown {
+    background: linear-gradient(45deg,
+        rgb(90, 0, 90) 40%,
+        rgb(60, 60, 20) 50%,
+        rgb(80, 0, 100) 60%);
+    width: 85%;
+  }
 }

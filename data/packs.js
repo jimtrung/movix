@@ -41,7 +41,7 @@ export const packs = [
     "devices": "TV, máy tính, thiết bị di động, máy tính bảng",
     "watch-amount": 4, 
     "download-amount": 5,
-    "price": 260000
+    "price": 1000000
   },
 ];
 
