@@ -7,16 +7,33 @@ if (localStorage.getItem('dark-mode') === "enabled") {
 }
 
 document.querySelector('footer').innerHTML = `
-  <span>Bạn có câu hỏi?<a>Liên hệ với chúng tôi</a></span>
-  <ul>
-    <li><a>Câu hỏi thường gặp</a></li>
-    <li><a>Trung tâm trợ giúp</a></li>
-    <li><a>Điều khoản sử dụng</a></li>
-    <li><a>Quyền riêng tư</a></li>
-    <li><a>Tùy chọn cookie</a></li>
-    <li><a>Thông tin doanh nghiệp</a></li>
-  </ul>
-  <select>
-    <option>Tiếng Việt</option>
-  </select>
+  <hr>
+  <div class="footer-content"> 
+    <ul>
+      <h3>Về SKY MEDIA</h3>
+      <li>Giới thiệu</li>
+      <li>Các gói dịch vụ</li>
+      <li>Liên hệ quảng cáo</li>
+      <li>Trung tâm hỗ trợ</li>
+    </ul>
+    <ul> 
+      <h3>Quy định</h3>
+      <li>Điều khoản sử dụng</li>
+      <li>Chính sách thanh toán</li> 
+      <li>Chính sách bảo mật thông tin</li>
+      <li>Chính sách bảo hành</li>
+    </ul>
+    <ul> 
+      <h3>Liên Hệ</h3>
+      <li><i class="fa-solid fa-phone"></i><span class="sdt">19008386</span></li>
+      <li><i class="fa-solid fa-envelope"></i><span class="mail">hotroHKT@gmail.com</span></li>
+      <p class="yap">Theo dõi chúng tôi qua:</p>
+      <ul class="socials">
+        <li><a class="fb" href="https://www.facebook.com/share/1DTPEeZQHG/?mibextid=wwXIfr" 
+        target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a class="ytb" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a class="toptop" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </ul>
+  </div>
 `

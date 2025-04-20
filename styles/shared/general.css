@@ -101,36 +101,62 @@ body {
 }
 
 footer {
-    padding: 30px 40px;
-    background-color: rgb(49, 46, 46);
+    background-color: rgb(16, 16, 16);
     color: white;
-    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
 }
 
-footer span {
-    display: block;
-    margin-bottom: 15px;
+hr {
+    margin: 0;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
+.footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 5%;
 }
 
-footer li {
-    margin: 5px 0;
+.footer-content li { 
+    list-style: none;
+    line-height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-shadow 0.3s, color 0.3s;
 }
 
-select {
-    margin-top: 15px;
-    padding: 5px;
+.footer-content li:hover { 
+    text-shadow: 0 0 5px rgb(176, 36, 36);
+    color: rgb(179, 50, 50);
+}
+
+.sdt, .mail {
+    margin-left: 6px;
+}
+
+.yap {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.socials {
+    display: flex;
+    padding: 0;
+}
+
+.ytb, .fb, .toptop {
+    color: white;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.ytb:hover, .fb:hover, .toptop:hover { 
+    color: red;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-content {
+        flex-direction: column;
+    }
 }
