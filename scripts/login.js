@@ -14,4 +14,8 @@ document.querySelector('.login-button').addEventListener('click', () => {
   } catch (e) {
     alert(e);
   }
+  
+  if (localStorage.getItem('email') != nil) {
+    window.location.href = "/index.html";
+  }
 });
