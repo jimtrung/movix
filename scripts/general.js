@@ -7,7 +7,7 @@ if (localStorage.getItem('dark-mode') === "enabled") {
 }
 
 document.querySelector('footer').innerHTML = `
-  <hr>
+  <hr class="hr"> 
   <div class="footer-content"> 
     <ul>
       <h3>Về SKY MEDIA</h3>

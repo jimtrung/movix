@@ -76,7 +76,7 @@ h1 {
   border-radius: 10px;
 }
 
-hr {
+.hr-1 {
   display: flex;
   width: 100%;
   max-width: 590px;

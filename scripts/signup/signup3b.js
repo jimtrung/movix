@@ -27,10 +27,10 @@ const paymentHTML =
 `
   <div class="pack-info">
     <div class="pack">Thông tin đơn hàng</div>
-    <hr>
+    <hr class="hr-1">
     <div class="info">Mã đơn hàng: #ADASH872</div>
-    <div class="info">Đơn hàng: Gói ${pack.name}</div>
-    <hr>
+    <div class="info">Đơn hàng: Gói ${pack.name}</div> 
+    <hr class="hr-1"> 
     <div class="total-cost">Tổng số tiền: ${MoneyToString(pack.price)} đ</div> 
   </div>
   <div class="payment-method">

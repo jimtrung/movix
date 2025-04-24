@@ -131,3 +131,12 @@ body.dark-mode .col-detail {
     width: 85%;
   }
 }
+
+.payment-container {
+  background-color: black;
+  color: white;
+}
+
+.qr-container {
+  color: wheat;
+}
