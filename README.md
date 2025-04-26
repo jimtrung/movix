@@ -37,6 +37,4 @@ movix/
 ## Đóng góp
 Mọi đóng góp đều được hoan nghênh! Hãy tạo **issue** hoặc gửi **pull request** nếu bạn muốn cải thiện dự án.
 
-## Giấy phép
-Dự án này được phát hành dưới giấy phép MIT. Vui lòng xem tệp `LICENSE` để biết thêm chi tiết.
 
