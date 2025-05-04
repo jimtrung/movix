@@ -120,7 +120,7 @@ main {
     height: 300%;
     background: linear-gradient(45deg, rgb(191, 55, 55) 40%, rgb(175, 177, 43) 50%, rgb(180, 57, 180) 60%);
     z-index: -1;
-    /* animation: rotate 20s linear infinite; */
+    animation: rotate 20s linear infinite;
     filter: blur(100px);
 }
 
@@ -245,11 +245,4 @@ main {
         font-size: 14px;
     }
 
-}
-
-@media screen and (max-width: 1186px) {
-    .dropdown {
-        background: linear-gradient(45deg, rgb(231, 98, 98) 20%, rgb(205, 216, 86) 50%, rgb(239, 75, 239) 80%);
-        width: 85%;
-    }
 }

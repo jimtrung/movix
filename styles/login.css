@@ -1,7 +1,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
-    /* animation-name: bg; */
+    animation-name: bg;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }

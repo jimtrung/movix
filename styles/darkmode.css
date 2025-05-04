@@ -122,16 +122,6 @@ body.dark-mode .col-detail {
   color: white;
 }
 
-@media screen and (max-width: 1186px) {
-  body.dark-mode .dropdown {
-    background: linear-gradient(45deg,
-        rgb(90, 0, 90) 40%,
-        rgb(60, 60, 20) 50%,
-        rgb(80, 0, 100) 60%);
-    width: 85%;
-  }
-}
-
 .payment-container {
   background-color: black;
   color: white;
