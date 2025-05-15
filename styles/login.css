@@ -1,19 +1,6 @@
 body {
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: darken;
-    animation-name: bg;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes bg {
-    from {
-        background-image: url(../assets/background1.jpg);
-    }
-
-    to {
-        background-image: url(../assets/background2.jpg);
-    }
 }
 
 .header-container {

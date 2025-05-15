@@ -41,11 +41,11 @@ const paymentHTML =
     <div class="payment-info">
       <img class="qr-code" src="assets/payment-qr.png">
       <div class="detail-container">
-        <div>Ngân hàng: MVXB</div> 
-        <div>Số tài khoản: 23810310044</span></div>
-        <div>Tên tài khoản: Movix Inc</div>
-        <div>Số tiền: ${MoneyToString(pack.price)} đ</div>
-        <div>Nội dung chuyển khoản: ADASH872</div>
+        <div>Ngân hàng: <span>MVXB</span></div> 
+        <div>Số tài khoản: <span>23810310044</span></div>
+        <div>Tên tài khoản: <span>Movix Inc</span></div>
+        <div>Số tiền: <span>${MoneyToString(pack.price)} đ</span></div>
+        <div>Nội dung chuyển khoản: <span>ADASH872</span></div>
       </div>
     </div>
   </div>

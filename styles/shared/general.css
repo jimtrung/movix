@@ -12,10 +12,6 @@ body {
     background-image: url(../../assets/background1.jpg);
 }
 
-.bg-2 {
-    background-image: url(../../assets/background2.jpg);
-}
-
 @font-face {
     font-family: 'Roboto';
     src: url('../../assets/Roboto/static/Roboto-Thin.ttf') format('truetype');

@@ -122,11 +122,11 @@ body.dark-mode .col-detail {
   color: white;
 }
 
-.payment-container {
+body.dark-mode .payment-container {
   background-color: black;
   color: white;
 }
 
-.qr-container {
+body.dark-mpde .qr-container {
   color: wheat;
 }
