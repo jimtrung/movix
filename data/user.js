@@ -1,6 +1,6 @@
 const users = JSON.parse(localStorage.getItem('users')) || [{ 
   "email": "trung@gmail.com",
-  "password": "123",
+  "password": "trung123",
   "pack": "luxury",
 }];
 
