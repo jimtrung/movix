@@ -1,4 +1,4 @@
-import { ToggleDropdown } from '../utils/dropdown.js';
+import { ToggleDropdown } from '../utils/dropdown.js'; 
 import { ToggleDarkMode } from "../utils/darkmode.js";
 
 // ============== MAIN ================ //

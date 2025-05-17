@@ -1,7 +1,11 @@
 import { LogOut } from "../../data/user.js";   
+import { ToggleDropdown } from '../utils/dropdown.js'; 
+import { ToggleDarkMode } from "../utils/darkmode.js";
 
-// =================== MAIN ================== //
+// =============== MAIN ================ //
 LogOut();
+ToggleDropdown();
+ToggleDarkMode();
 
 const email = localStorage.getItem('email');
 document.querySelector('.email').innerHTML = email;

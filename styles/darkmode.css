@@ -62,9 +62,9 @@ body.dark-mode .s-not-done {
 
 body.dark-mode .background {
   background: linear-gradient(45deg,
-      rgb(90, 0, 90) 40%,
-      rgb(60, 60, 20) 50%,
-      rgb(80, 0, 100) 60%);
+      rgb(37, 33, 37) 30%,
+      rgb(106, 58, 58) 50%,
+      rgb(37, 33, 37) 70%);
   filter: blur(100px) brightness(0.5);
 }
 
@@ -93,6 +93,10 @@ body.dark-mode h1 {
 }
 
 body.dark-mode .yapping {
+  color: rgb(158, 158, 158);
+}
+
+body.dark-mode .slogan {
   color: rgb(158, 158, 158);
 }
 
@@ -127,6 +131,6 @@ body.dark-mode .payment-container {
   color: white;
 }
 
-body.dark-mpde .qr-container {
+body.dark-mode .qr-container {
   color: wheat;
 }

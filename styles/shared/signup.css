@@ -118,7 +118,7 @@ main {
     position: absolute;
     width: 300%;
     height: 300%;
-    background: linear-gradient(45deg, rgb(191, 55, 55) 40%, rgb(175, 177, 43) 50%, rgb(180, 57, 180) 60%);
+    background: linear-gradient(45deg, rgb(191, 55, 55) 40%, rgb(167, 167, 158) 50%, rgb(191, 55, 55) 60%); 
     z-index: -1;
     animation: rotate 20s linear infinite;
     filter: blur(100px);

@@ -1,27 +1,19 @@
-.logout-container {
+.right-header {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    max-width: 340px;
-    width: 100%;
-    gap: 2%;
+    align-items: end;
+    gap: 14px;
 }
 
 .email {
     font-weight: 500;
-    margin-right: 1%;
 }
 
-.logout-container a {
+.menu a { 
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: rgb(34, 33, 33);
     transition: text-decoration 0.3s;
-}
-
-.logout-container a:hover {
-    text-decoration: underline;
 }
 
 main {
