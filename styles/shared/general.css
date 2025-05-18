@@ -96,59 +96,71 @@ body {
     font-style: italic;
 }
 
-footer {
-    background-color: rgb(16, 16, 16);
-    color: white;
-    margin: 0;
-    padding-bottom: 40px;
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(19, 19, 19); 
 }
 
-.hr {
-    margin: 0;
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: crimson;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    gap: 5%;
+.footer .social a {
+  font-size: 25px;
+  color: rgb(220, 20, 60);
+  border: 2px solid crimson; 
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
 }
 
-.footer-content li { 
-    list-style: none;
-    line-height: 24px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: text-shadow 0.3s, color 0.3s;
+.footer .social a:hover {
+  transform: scale(1.2)translate(-10px);
+  background-color: crimson;
+  color: black;
+  box-shadow: 0 0 25px crimson; 
 }
 
-.footer-content li:hover { 
-    text-shadow: 0 0 5px crimson;
-    color: crimson;
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-.sdt, .mail {
-    margin-left: 6px;
+.footer ul li a {
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-.yap {
-    margin: 0;
-    padding: 0;
-    line-height: 24px;
+.footer ul il a:hover {
+  border-bottom: 3px solid crimson;
 }
 
-.socials {
-    display: flex;
-    padding: 0;
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
 }
 
-.ytb, .fb, .toptop {
-    color: white;
-    margin-right: 10px;
-    transition: color 0.3s;
-}
-
-.ytb:hover, .fb:hover, .toptop:hover { 
-    color: crimson;
+.footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
 }
 
 @media screen and (max-width: 750px) {
