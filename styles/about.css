@@ -9,6 +9,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+.brand-logo {
+  font-size: 40px;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
 :root {
   --bg-color: #080808;
   --second-bg-color: #131313;

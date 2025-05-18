@@ -10,8 +10,8 @@ document.querySelector('footer').innerHTML = `
   <hr class="hr"> 
   <div class="footer-content"> 
     <ul>
-      <h3>Về SKY MEDIA</h3>
-      <li>Giới thiệu</li>
+      <h3>Về Movix</h3>
+      <li onclick="window.location.href='about.html'">Giới thiệu</li>
       <li>Các gói dịch vụ</li>
       <li>Liên hệ quảng cáo</li>
       <li>Trung tâm hỗ trợ</li>
@@ -26,7 +26,7 @@ document.querySelector('footer').innerHTML = `
     <ul> 
       <h3>Liên Hệ</h3>
       <li><i class="fa-solid fa-phone"></i><span class="sdt">19008386</span></li>
-      <li><i class="fa-solid fa-envelope"></i><span class="mail">hotroHKT@gmail.com</span></li>
+      <li><i class="fa-solid fa-envelope"></i><span class="mail">movix@gmail.com</span></li>
       <p class="yap">Theo dõi chúng tôi qua:</p>
       <ul class="socials">
         <li><a class="fb" href="https://www.facebook.com/share/1DTPEeZQHG/?mibextid=wwXIfr" 

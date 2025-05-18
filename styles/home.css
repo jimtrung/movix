@@ -14,16 +14,22 @@ main {
     max-width: 1920px;
 }
 
-.logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 2%;
 }
 
-.logo a {
+.brand-logo {
+    font-size: 40px;
+    color: crimson
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: crimson;
     text-decoration: none;
-    margin: 15px;
 }
 
 nav ul {
@@ -44,7 +50,7 @@ header {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;  
     margin: 0;
     padding: 0;
     background-color: #111;
@@ -118,12 +124,12 @@ nav a {
     padding-bottom: 5px;
     align-items: center;
     margin-bottom: 10px;
-    background-color: red;
+    background-color: crimson;
     color: aliceblue;
 }
 
 .br {
-    color: red;
+    color: crimson;
     max-width: 1470px;
     width: 94%;
     display: flex;
@@ -228,7 +234,6 @@ ul {
 }
 
 .phongchu {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 55px;
 }
 
@@ -259,14 +264,15 @@ ul {
     margin-top: 31px;
     align-items: center;
     animation: khanh 1.2s infinite alternate;
+    border: none;
 }
 
 .dki {
     color: aliceblue;
     font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
     margin-top: 9px;
     margin-bottom: 9px;
+    cursor: pointer;
 }
 
 .phim1 {
