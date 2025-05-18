@@ -1,0 +1,568 @@
+.codinh {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.logo a {
+    text-decoration: none;
+    margin: 15px;
+}
+
+main {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    height: 40px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.one {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+.logo1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 100%;
+}
+
+.pim:hover,
+.tivi:hover,
+.music:hover,
+.cartoon:hover,
+.thethao:hover,
+.xemthem:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.pim,
+.tivi,
+.music,
+.cartoon,
+.xemthem {
+    transition: color 0.3s;
+}
+
+.bell:hover,
+.search:hover {
+    color: crimson;
+}
+
+.bell,
+.search,
+.user {
+    font-size: 23px;
+}
+
+#hamburger-menu {
+    font-size: 23px;
+}
+
+#hamburger-menu:hover {
+    color: crimson;
+}
+
+.user:hover {
+    color: crimson;
+}
+
+#login {
+    font-size: 15px;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: red;
+    color: aliceblue;
+}
+
+.br {
+    color: red;
+    max-width: 1470px;
+    width: 94%;
+    display: flex;
+    opacity: 0.5;
+}
+
+.div1 {
+    list-style: none;
+    line-height: 24px;
+}
+
+.div0 {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.div2 {
+    line-height: 24px;
+    list-style: none;
+}
+
+.sdt {
+    margin-left: 6px;
+}
+
+.div3 {
+    list-style: none;
+    line-height: 24px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mail {
+    margin-left: 6px;
+}
+
+.ytb {
+    color: white;
+    margin-left: 10px;
+}
+
+.toptop {
+    color: white;
+    margin-left: 10px;
+}
+
+.fb {
+    color: white;
+}
+
+.div0 {
+    /* margin-right: 200px;
+    margin-left: 200px; */
+    /* justify-content: space-between; */
+    gap: 8%;
+    margin: 0 3%;
+}
+
+.div1 li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.div2 li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.fb:hover,
+.ytb:hover,
+.toptop:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.more {
+    width: 170px;
+    height: 190px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 753px;
+    display: none;
+    line-height: 22.5px;
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.hienThi {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pre {
+    position: absolute;
+    z-index: 1000;
+    height: 314px;
+    width: 63px;
+    font-size: 60px;
+    opacity: 0;
+    border: none;
+    background-color: rgba(1, 5, 20, 0.907);
+    color: rgba(233, 233, 241, 0.926);
+    bottom: 43px;
+    border-radius: 5px;
+    left: 0px;
+}
+
+.DIV-container {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+}
+
+.carousel {
+    margin-left: 5%;
+    position: relative;
+    max-width: 1390px;
+    width: 90%;
+}
+
+.fa-bars {
+    display: none !important;
+}
+
+.MENU {
+    display: none;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2000;
+    line-height: 40px;
+    color: white;
+}
+
+.hienthi2 {
+    display: grid;
+    grid-template-rows: repeat(17, 1fr);
+    background-color: rgb(52, 51, 51);
+}
+
+.MENU li {
+    list-style: none;
+}
+
+.backgr-phone:hover {
+    background-color: gray;
+}
+
+.MENU div {
+    max-width: 200px;
+    width: 100%;
+}
+
+.MENU span {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 979px) {
+    .one {
+        display: none;
+    }
+
+    .backgr2 {
+        background-size: cover;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .fa-bars {
+        display: initial !important;
+    }
+
+    main {
+        margin-top: 48px;
+    }
+
+    header {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .logo {
+        display: none;
+    }
+
+    .fa-bars {
+        display: initial !important;
+    }
+
+    .div0 {
+        flex-direction: column;
+    }
+
+    .text {
+        margin-top: 15px;
+    }
+
+    .previous,
+    .RIGHT {
+        display: none !important;
+    }
+
+    .loaiphim1,
+    .loaiphim2 {
+        height: 270px;
+        width: 203px;
+    }
+
+    .phim1,
+    .phim {
+        height: 108px;
+        width: 203px;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    .marquee {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .backgr2 {
+        border-radius: 8px;
+    }
+
+    .phongchu {
+        font-size: 25px;
+    }
+
+    .phongchu2 {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .nut {
+        width: 175px;
+        margin-top: 8px;
+        height: 39px;
+    }
+
+    .dki {
+        font-size: 11px;
+        padding: 0px;
+    }
+
+    .previous,
+    .RIGHT {
+        display: none !important;
+    }
+
+    main {
+        margin-top: 48px;
+    }
+
+}
+
+.marquee-big {
+    display: flex;
+    justify-content: center;
+}
+
+.marquee {
+    height: 25px;
+    background-color: #201c1c;
+    color: #FFD700;
+    font-weight: bold;
+    margin-top: 0;
+    max-width: 900px;
+    width: 100%;
+}
+
+.text-go2 {
+    display: flex;
+    margin-bottom: 1px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.chu-chay2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/*  */
+.divint {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /* padding: 2px 6px; */
+    max-width: 1140px;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: #222;
+    border-radius: 15px;
+}
+
+.input {
+    padding: 12px 16px;
+    max-width: 970px;
+    width: 100%;
+    height: 30px;
+    background-color: #222;
+    border: none;
+    display: flex;
+    forced-color-adjust: none;
+}
+
+.search2 {
+    height: 44.5px;
+    width: 90px;
+    background-color: rgb(73, 67, 67);
+    border: none;
+    border-radius: 10px;
+    padding: 3px 3px;
+}
+
+.textsearch {
+    color: azure;
+}
+
+.logosearch {
+    background-color: #222 !important;
+}
+
+.search2:hover {
+    opacity: 10;
+}
+
+.input:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: white;
+}
+
+.divtwo {
+    display: flex;
+}
+
+.texttwo {
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 23px;
+    display: flex;
+}
+
+.phim1s {
+    height: 100px;
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.pic-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.div-pic {
+    display: flex;
+    margin-top: 5px;
+}
+
+.text-pic {
+    justify-content: center;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.text-pic2 {
+    font-size: 20px;
+}
+
+.text-pic3 {
+    font-size: 13px;
+}
+
+.top-recent {
+    display: flex;
+}
+
+.div-search-big {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+}
+
+.search-hangdau {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 23px;
+}
+
+.div-search-biggest {
+    display: flex;
+    justify-content: center;
+}
+
+.top-recent a {
+    color: rgb(240, 232, 232);
+    background-color: rgb(36, 34, 36);
+    text-decoration: none;
+    border-radius: 11px;
+    padding: 8px 8px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    margin-right: 5px;
+}
+
+.search-hangdau div {
+    margin-bottom: 20px;
+}
+
+.top-recent a:hover {
+    color: rgb(248, 6, 54);
+    cursor: pointer;
+}
