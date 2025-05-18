@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/shared/general.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/all.min.css">
+  <title>Login</title>
+</head>
+
+<body class="bg-1">
+  <header>
+    <div class="header-container">
+      <a href="home.html" class="brand-container">
+        <i class="fa-brands fa-youtube"></i>
+        <span>MOVIX</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-wrapper">
+      <div class="main-container">
+        <div class="login-form-container">
+          <h1>Đăng nhập</h1>
+          <form class="login-form">
+            <input class="email-input" type="email" placeholder="Email" required>
+            <input class="password-input" type="password" placeholder="Mật khẩu" required>
+            <div class="password-eye-icon"> 
+              <i class="pw fa-solid fa-eye"></i>
+              <i class="visible pw fa-solid fa-eye-slash"></i>
+            </div>
+            <div class="remember-me-check-box">
+              <input class="checkbox" type="checkbox">
+              <span>Ghi nhớ tôi</span>
+            </div>
+            <button class="login-button" type="submit">Đăng nhập</button>
+          </form>
+          <div class="other-login-methods">
+            <p>HOẶC</p>
+            <div>
+              <button class="login-code">Sử dụng mã đăng nhập</button>
+            </div>
+            <div class="oauth-login">
+              <button class="google-login-button">
+                <i class="google-icon fa-brands fa-google"></i>
+                <p>
+                  <span class="blue">G</span>
+                  <span class="red">o</span>
+                  <span class="yellow">o</span>
+                  <span class="blue">g</span>
+                  <span class="green">l</span>
+                  <span class="red">e</span>
+                </p>
+              </button>
+              <button class="facebook-login-button">
+                <i class="facebook-icon fa-brands fa-facebook"></i>
+                <p>Facebook</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="forgot-password" href="forgot-password.html">Bạn quên mật khẩu?</a>
+        <div class="other-options">
+          <span>Bạn mới sử dụng?</span>
+          <a href="signup1a.html">Đăng ký ngay</a>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+  </footer>
+  
+  <script type="module" src="scripts/login.js"></script>
+  <script src="scripts/general.js"></script>
+</body>
+
+</html>

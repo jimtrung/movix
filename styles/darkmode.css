@@ -1,0 +1,131 @@
+body.dark-mode .header-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgb(68, 68, 68);
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .brand-container {
+  color: crimson;
+}
+
+body.dark-mode .email {
+  color: crimson;
+}
+
+body.dark-mode .user-icon {
+  color: crimson; 
+}
+
+body.dark-mode .dropdown {
+  background-color: rgba(40, 40, 40, 0.95);
+  border: 1px solid rgb(68, 68, 68);
+  box-shadow: -5px 5px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .dropdown a {
+  color: rgb(221, 221, 221);
+}
+
+body.dark-mode .dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .dropdown-item-container {
+  border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+body.dark-mode .icon-container {
+  background-color: rgba(80, 80, 80, 0.8);
+}
+
+body.dark-mode .s-text-done {
+  color: rgb(187, 187, 187);
+}
+
+body.dark-mode .s-text-not-done {
+  color: rgb(153, 153, 153);
+}
+
+body.dark-mode .s-done {
+  background-color: crimson;
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .s-not-done {
+  background-color: rgb(85, 85, 85);
+  color: rgb(238, 238, 238);
+}
+
+body.dark-mode .background {
+  background: linear-gradient(45deg,
+      rgb(37, 33, 37) 49%,
+      rgb(159, 40, 64) 50%);
+  filter: blur(69px) brightness(0.5);
+}
+
+body.dark-mode .progress-bar-1 {
+  background: linear-gradient(to right,
+      rgb(68, 68, 68) 0%,
+      rgb(68, 68, 68) 100%);
+}
+
+body.dark-mode .progress-bar-2 {
+  background: linear-gradient(to right,
+      crimson 0%,
+      crimson 50%, 
+      rgb(68, 68, 68) 50%,
+      rgb(68, 68, 68) 100%);
+}
+
+body.dark-mode .progress-bar-3 {
+  background: linear-gradient(to right,
+      crimson 0%,
+      crimson 100%); 
+}
+
+body.dark-mode h1 {
+  color: rgb(187, 187, 187);
+}
+
+body.dark-mode .yapping {
+  color: rgb(158, 158, 158);
+}
+
+body.dark-mode .slogan {
+  color: rgb(158, 158, 158);
+}
+
+body.dark-mode input {
+  color: white;
+  background-color: rgba(80, 80, 80, 0.6);
+}
+
+body.dark-mode input:focus {
+  color: white;
+  background-color: rgba(80, 80, 80, 0.6);
+}
+
+body.dark-mode .pw {
+  color: white;
+}
+
+body.dark-mode .checkbox-description {
+  color: white;
+}
+
+body.dark-mode .pack-container {
+  background-color: black;
+}
+
+body.dark-mode .col-detail {
+  color: white;
+}
+
+body.dark-mode .payment-container {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .qr-container {
+  color: wheat;
+}

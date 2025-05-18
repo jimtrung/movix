@@ -1,0 +1,211 @@
+.right-header {
+    display: flex;
+    align-items: end;
+    gap: 14px;
+}
+
+.email {
+    font-weight: 500;
+}
+
+.menu a { 
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(34, 33, 33);
+    transition: text-decoration 0.3s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.main-wrapper {
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 85px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    color: rgb(58, 55, 55);
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+
+.pack-container {
+    border: 1px solid gray;
+    border-radius: 18px;
+    background-color: aliceblue;
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.pack-container:hover {
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.pack-header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 18px;
+    padding: 10px 16px 15px 16px;
+    margin-bottom: 25px;
+}
+
+.mobile-pack {
+    border: 2px solid gray;
+}
+
+.basic-pack {
+    border: 2px solid green;
+}
+
+.standard-pack {
+    border: 2px solid rgb(228, 160, 0);
+}
+
+.luxury-pack {
+    border: 2px solid rgb(115, 0, 255);
+}
+
+.mobile {
+    background: url(../../assets/pack-images/mobile.jpg) no-repeat center 20%;
+    border: 2px solid gray;
+}
+
+.basic {
+    background: url(../../assets/pack-images/basic.webp) no-repeat center 20%;
+}
+
+.standard {
+    background: url(../../assets/pack-images/standard.avif) no-repeat left;
+}
+
+.luxury {
+    background: url(../../assets/pack-images/luxury.jfif) no-repeat left;
+}
+
+.picked-icon-container {
+    display: flex;
+    justify-content: right;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.pack-description {
+    padding: 0px 15px 20px 15px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    font-size: 13px;
+    color: rgb(118, 118, 118);
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.col-detail {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.next-button-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.next-button {
+    padding: 24px 12px;
+    background-color: crimson; 
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 330px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 40px;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: rgb(188, 19, 52);  
+} 
+
+.next-button:active {
+    background-color: rgb(133, 15, 38); 
+}
+
+@media screen and (max-width: 535px) {
+    .brand-container i {
+        font-size: 35px;
+    }
+
+    .brand-container span {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .yapping {
+        font-size: 16px;
+    }
+
+    .login-container a {
+        font-size: 16px;
+    }
+
+    .email {
+        display: none;
+    }
+}

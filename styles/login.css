@@ -1,0 +1,299 @@
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    cursor: pointer;
+    text-decoration: none;
+    color: crimson
+}
+
+.brand-container i {
+    font-size: 70px;
+}
+
+.brand-container span {
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 35px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 180px;
+    margin-top: 30px;
+}
+
+.main-wrapper {
+    color: white;
+    padding: 5% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 8px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 322px;
+    width: 100%;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 4%;
+    max-width: 322px;
+    width: 100%;
+}
+
+h1 {
+    margin: 0px 0px 30px 0px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 322px;
+    width: 100%;
+}
+
+.email-input,
+.password-input {
+    display: flex;
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid crimson;
+    border-radius: 6px;
+    padding: 12px;
+    max-width: 298px;
+    width: 100%;
+}
+
+.password-input,
+.remember-me-check-box {
+    margin-top: 15px;
+}
+
+.password-eye-icon {
+    position: relative;
+}
+
+.pw {
+    position: absolute;
+    right: 8px;
+    bottom: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.2);
+    display: none !important;
+}
+
+.visible {
+    display: block !important;
+}
+
+.checkbox {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.login-button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    max-width: 322px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: rgb(176, 12, 45);
+}
+
+.login-button:active {
+    background-color: rgb(143, 8, 35);
+}
+
+.other-login-methods {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-code {
+    margin-top: 5px;
+    padding: 16px 12px;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.oauth-login {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.google-login-button,
+.facebook-login-button {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.google-login-button:hover,
+.facebook-login-button:hover,
+.login-code:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.google-login-button:active,
+.facebook-login-button:active,
+.login-code:active {
+    background-color: black;
+    color: white;
+}
+
+.google-icon,
+.facebook-icon {
+    font-size: 23px;
+    margin-right: 6px;
+    transition: color 0.3s;
+}
+
+.google-login-button p,
+.facebook-login-button p {
+    display: flex;
+    gap: 0;
+}
+
+.google-login-button p span,
+.facebook-login-button p span {
+    transition: color 0.4s;
+}
+
+.google-login-button:hover .google-icon {
+    color: rgb(234, 67, 53);
+}
+
+.facebook-login-button:hover .facebook-icon {
+    color: rgb(24, 119, 242);
+}
+
+.google-login-button:hover .blue {
+    color: rgb(66, 133, 244);
+}
+
+.google-login-button:hover .red {
+    color: rgb(234, 67, 53);
+}
+
+.google-login-button:hover .yellow {
+    color: rgb(251, 188, 5);
+}
+
+.google-login-button:hover .green {
+    color: rgb(52, 168, 83);
+}
+
+.other-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.other-options span {
+    color: gray;
+}
+
+.other-options a {
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.other-options a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    margin-top: 8px;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.forgot-password:hover {
+    opacity: 0.8;
+    color: aqua;
+    text-shadow: 0px 4px 10px rgba(12, 151, 206, 0.7);
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: black;
+        background-image: none;
+    }
+
+    .brand-container {
+        padding: 10px 0px 0px 10px;
+        gap: 0%;
+    }
+
+    .brand-container i {
+        font-size: 35px;
+    }
+
+    .brand-container span {
+        font-size: 20px;
+    }
+
+    .email-input,
+    .password-input {
+        width: 90%;
+    }
+
+    .pw {
+        right: 5%;
+    }
+}
